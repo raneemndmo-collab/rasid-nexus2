@@ -4,7 +4,7 @@
     "name": "Module Structure Validation",
     "pass": true,
     "details": [
-      "All 10 modules follow Clean Architecture structure"
+      "All 16 modules follow Clean Architecture structure"
     ]
   },
   {
@@ -92,7 +92,7 @@
     "name": "Module Manifest Completeness",
     "pass": true,
     "details": [
-      "All 10 module manifests are complete"
+      "All 16 module manifests are complete"
     ]
   }
 ]

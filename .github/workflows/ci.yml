@@ -1,0 +1,118 @@
+name: Rasid Platform CI
+
+on:
+  push:
+    branches: [release/phase-*, main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: TypeScript Strict Compilation
+        run: npx tsc --noEmit
+
+  static-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: SA-001 to SA-012 Complete Static Analysis
+        run: node scripts/sa-all-checks.js
+
+  unit-tests:
+    runs-on: ubuntu-latest
+    needs: [typecheck]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Run Unit Tests
+        run: npx jest --testPathPattern='test/phase-0/' --forceExit --detectOpenHandles
+
+  integration-tests:
+    runs-on: ubuntu-latest
+    needs: [typecheck]
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: rasid_admin
+          POSTGRES_PASSWORD: rasid_admin_pass
+          POSTGRES_DB: rasid_admin
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      nats:
+        image: nats:2.10-alpine
+        command: ["--jetstream"]
+        ports:
+          - 4222:4222
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Setup Databases
+        run: |
+          PGPASSWORD=rasid_admin_pass psql -h localhost -U rasid_admin -f infrastructure/database/init/01-create-databases.sql
+          PGPASSWORD=rasid_admin_pass psql -h localhost -U rasid_admin -f infrastructure/database/init/02-enable-rls.sql
+      - name: Run Integration Tests
+        run: npx ts-node --transpile-only test/phase-0-real/setup-and-test.ts
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [unit-tests, integration-tests, static-analysis]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Build
+        run: npx tsc -p tsconfig.build.json

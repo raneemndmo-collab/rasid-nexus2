@@ -1,0 +1,27 @@
+{
+  "moduleId": "M5",
+  "name": "Departments",
+  "version": "1.0.0",
+  "phase": 1,
+  "type": "business",
+  "database": "m5_departments_db",
+  "namespace": "department.*",
+  "dependencies": ["K1", "K2", "K3", "K5"],
+  "events_published": [
+    "department.created",
+    "department.updated",
+    "department.deleted",
+    "department.activated",
+    "department.deactivated"
+  ],
+  "events_consumed": [],
+  "apis": [
+    "POST /m5/departments",
+    "GET /m5/departments",
+    "GET /m5/departments/tree",
+    "GET /m5/departments/:id",
+    "GET /m5/departments/:id/children",
+    "PUT /m5/departments/:id",
+    "DELETE /m5/departments/:id"
+  ]
+}

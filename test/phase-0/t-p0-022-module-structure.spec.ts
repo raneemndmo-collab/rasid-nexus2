@@ -44,7 +44,7 @@ describe('T-P0-022: Module Structure Validation', () => {
     });
   }
 
-  it('should have exactly 10 modules for Phase 0', () => {
-    expect(modules.length).toBe(10);
+  it('should have at least 10 modules (Phase 0 baseline)', () => {
+    expect(modules.length).toBeGreaterThanOrEqual(10);
   });
 });

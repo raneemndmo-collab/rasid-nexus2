@@ -1,0 +1,27 @@
+{
+  "moduleId": "K6",
+  "name": "Notification Service",
+  "version": "1.0.0",
+  "phase": 1,
+  "type": "kernel",
+  "database": "k6_notification_db",
+  "namespace": "notification.*",
+  "dependencies": ["K5"],
+  "events_published": [
+    "notification.requested",
+    "notification.sent",
+    "notification.delivered",
+    "notification.failed",
+    "notification.opted_out",
+    "notification.template.created",
+    "notification.template.updated",
+    "notification.preference.updated"
+  ],
+  "events_consumed": [],
+  "apis": [
+    "POST /k6/notifications/send",
+    "GET /k6/notifications/:recipientId",
+    "PUT /k6/notifications/preferences",
+    "GET /k6/notifications/preferences/:userId"
+  ]
+}

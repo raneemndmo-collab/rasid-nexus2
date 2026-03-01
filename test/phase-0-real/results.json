@@ -3,7 +3,7 @@
     "id": "T-P0-001",
     "name": "Cluster Health",
     "status": "PASS",
-    "duration_ms": 70,
+    "duration_ms": 243,
     "details": "3/3 services healthy",
     "subtests": [
       {
@@ -27,7 +27,7 @@
     "id": "T-P0-002",
     "name": "Database Connectivity",
     "status": "PASS",
-    "duration_ms": 148,
+    "duration_ms": 103,
     "details": "10/10 databases connected",
     "subtests": [
       {
@@ -86,7 +86,7 @@
     "id": "T-P0-003",
     "name": "RLS Enforcement",
     "status": "PASS",
-    "duration_ms": 51,
+    "duration_ms": 288,
     "details": "6/6 checks passed",
     "subtests": [
       {
@@ -125,7 +125,7 @@
     "id": "T-P0-004",
     "name": "K1 Token Lifecycle",
     "status": "PASS",
-    "duration_ms": 145,
+    "duration_ms": 440,
     "details": "7/7 checks passed",
     "subtests": [
       {
@@ -136,7 +136,7 @@
       {
         "name": "Token validation",
         "status": "PASS",
-        "details": "sub=ef7a0bc6-3e83-4113-b993-e9b71953e918"
+        "details": "sub=666d1e5c-61f7-4214-ba44-5874ed26d034"
       },
       {
         "name": "Expired token rejected",
@@ -169,7 +169,7 @@
     "id": "T-P0-005",
     "name": "K2 Cross-Tenant Isolation (DT-001)",
     "status": "PASS",
-    "duration_ms": 98,
+    "duration_ms": 586,
     "details": "2/2 checks passed",
     "subtests": [
       {
@@ -188,7 +188,7 @@
     "id": "T-P0-006",
     "name": "K3 Audit Completeness (DT-003)",
     "status": "PASS",
-    "duration_ms": 30,
+    "duration_ms": 72,
     "details": "3/3 checks passed",
     "subtests": [
       {
@@ -212,7 +212,7 @@
     "id": "T-P0-007",
     "name": "K3 Audit Immutability",
     "status": "PASS",
-    "duration_ms": 33,
+    "duration_ms": 409,
     "details": "3/3 checks passed",
     "subtests": [
       {
@@ -236,7 +236,7 @@
     "id": "T-P0-008",
     "name": "K4 Config Cache",
     "status": "PASS",
-    "duration_ms": 29,
+    "duration_ms": 209,
     "details": "5/5 checks passed",
     "subtests": [
       {
@@ -252,7 +252,7 @@
       {
         "name": "Config read from cache",
         "status": "PASS",
-        "details": "duration=0.254ms, match=true"
+        "details": "duration=2.175ms, match=true"
       },
       {
         "name": "Cache invalidation on update",
@@ -262,7 +262,7 @@
       {
         "name": "Config read from DB (uncached)",
         "status": "PASS",
-        "details": "duration=0.913ms"
+        "details": "duration=5.176ms"
       }
     ]
   },
@@ -270,7 +270,7 @@
     "id": "T-P0-009",
     "name": "K5 Event Delivery (DT-005)",
     "status": "PASS",
-    "duration_ms": 1046,
+    "duration_ms": 1090,
     "details": "3/3 checks passed",
     "subtests": [
       {
@@ -294,7 +294,7 @@
     "id": "T-P0-010/011/012",
     "name": "Schema Validation + DLQ + Idempotency",
     "status": "PASS",
-    "duration_ms": 45,
+    "duration_ms": 47,
     "details": "3/3 checks passed",
     "subtests": [
       {
@@ -318,13 +318,13 @@
     "id": "T-P0-014/015/016",
     "name": "M1 User CRUD + Password + M2 Tenant",
     "status": "PASS",
-    "duration_ms": 1116,
+    "duration_ms": 1142,
     "details": "9/9 checks passed",
     "subtests": [
       {
         "name": "M1 User CREATE",
         "status": "PASS",
-        "details": "id=1410c7bb-9894-463b-bdcd-fcbf17a527bb"
+        "details": "id=43bb9f3c-7205-41d7-ae07-9f3bad983606"
       },
       {
         "name": "M1 User READ",
@@ -372,7 +372,7 @@
     "id": "T-P0-017/018",
     "name": "Permission Chain + Action Registry",
     "status": "PASS",
-    "duration_ms": 93,
+    "duration_ms": 234,
     "details": "6/6 checks passed",
     "subtests": [
       {
@@ -411,7 +411,7 @@
     "id": "T-P0-025/026",
     "name": "Credential Isolation",
     "status": "PASS",
-    "duration_ms": 67,
+    "duration_ms": 36,
     "details": "6/6 checks passed",
     "subtests": [
       {

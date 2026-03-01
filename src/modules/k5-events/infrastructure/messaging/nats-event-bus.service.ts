@@ -73,7 +73,7 @@ export class NatsEventBusService implements IEventBus, OnModuleInit, OnModuleDes
         const subject = event.event_type.replace(/\./g, '.');
         await this.jetstream.publish(subject, this.sc.encode(JSON.stringify(event)));
       } catch (error) {
-        this.logger.error(`Failed to publish event ${event.event_id} to NATS`, error);
+        this.logger.error(`Failed to publish event ${event.event_id || 'unknown'} to NATS`, error);
       }
     }
 
@@ -92,7 +92,7 @@ export class NatsEventBusService implements IEventBus, OnModuleInit, OnModuleDes
 
   private async executeWithRetry(event: EventEnvelope, handler: (event: EventEnvelope) => Promise<void>): Promise<void> {
     // Idempotency check
-    if (this.processedEvents.has(event.event_id)) {
+    if (this.processedEvents.has(event.event_id ?? '')) {
       return;
     }
 
@@ -100,13 +100,13 @@ export class NatsEventBusService implements IEventBus, OnModuleInit, OnModuleDes
     while (attempts < MAX_RETRY) {
       try {
         await handler(event);
-        this.processedEvents.add(event.event_id);
+        this.processedEvents.add(event.event_id ?? '');
         return;
       } catch (error) {
         attempts++;
         if (attempts >= MAX_RETRY) {
           await this.dlqService.enqueue(event, String(error), attempts);
-          this.logger.error(`Event ${event.event_id} moved to DLQ after ${MAX_RETRY} attempts`);
+          this.logger.error(`Event ${event.event_id || 'unknown'} moved to DLQ after ${MAX_RETRY} attempts`);
         }
       }
     }

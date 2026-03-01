@@ -1,0 +1,26 @@
+{
+  "moduleId": "K7",
+  "name": "Scheduler Service",
+  "version": "1.0.0",
+  "phase": 1,
+  "type": "kernel",
+  "database": "k7_scheduler_db",
+  "namespace": "scheduler.*",
+  "dependencies": ["K5"],
+  "events_published": [
+    "scheduler.job.scheduled",
+    "scheduler.job.started",
+    "scheduler.job.completed",
+    "scheduler.job.failed",
+    "scheduler.job.retrying",
+    "scheduler.job.cancelled"
+  ],
+  "events_consumed": [],
+  "apis": [
+    "POST /k7/scheduler/jobs",
+    "GET /k7/scheduler/jobs",
+    "GET /k7/scheduler/jobs/:id/logs",
+    "DELETE /k7/scheduler/jobs/:id",
+    "POST /k7/scheduler/process"
+  ]
+}

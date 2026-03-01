@@ -1,0 +1,29 @@
+{
+  "moduleId": "M8",
+  "name": "Leave Management",
+  "version": "1.0.0",
+  "phase": 1,
+  "type": "business",
+  "database": "m8_leave_db",
+  "namespace": "leave.*",
+  "dependencies": ["K1", "K2", "K3", "K5", "K6", "M6"],
+  "events_published": [
+    "leave.requested",
+    "leave.approved",
+    "leave.rejected",
+    "leave.cancelled",
+    "leave.balance.updated",
+    "leave.balance.initialized"
+  ],
+  "events_consumed": ["employee.created", "employee.terminated"],
+  "apis": [
+    "POST /m8/leave/requests",
+    "GET /m8/leave/requests/pending",
+    "GET /m8/leave/requests/employee/:employeeId",
+    "PUT /m8/leave/requests/:id/approve",
+    "PUT /m8/leave/requests/:id/reject",
+    "DELETE /m8/leave/requests/:id",
+    "GET /m8/leave/balance/:employeeId",
+    "POST /m8/leave/balance/initialize"
+  ]
+}

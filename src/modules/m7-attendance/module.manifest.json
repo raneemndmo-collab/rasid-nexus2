@@ -1,0 +1,26 @@
+{
+  "moduleId": "M7",
+  "name": "Attendance",
+  "version": "1.0.0",
+  "phase": 1,
+  "type": "business",
+  "database": "m7_attendance_db",
+  "namespace": "attendance.*",
+  "dependencies": ["K1", "K2", "K3", "K5", "M6"],
+  "events_published": [
+    "attendance.check_in",
+    "attendance.check_out",
+    "attendance.late_arrival",
+    "attendance.early_departure",
+    "attendance.absent_marked",
+    "attendance.record_corrected"
+  ],
+  "events_consumed": ["employee.created", "employee.terminated"],
+  "apis": [
+    "POST /m7/attendance/check-in",
+    "POST /m7/attendance/check-out",
+    "GET /m7/attendance/employee/:employeeId",
+    "GET /m7/attendance/date/:date",
+    "GET /m7/attendance/summary/:employeeId"
+  ]
+}

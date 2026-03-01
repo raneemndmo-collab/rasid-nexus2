@@ -1,0 +1,26 @@
+{
+  "moduleId": "M6",
+  "name": "Employees",
+  "version": "1.0.0",
+  "phase": 1,
+  "type": "business",
+  "database": "m6_employees_db",
+  "namespace": "employee.*",
+  "dependencies": ["K1", "K2", "K3", "K5", "M5"],
+  "events_published": [
+    "employee.created",
+    "employee.updated",
+    "employee.terminated",
+    "employee.transferred",
+    "employee.promoted"
+  ],
+  "events_consumed": ["department.created", "department.deleted"],
+  "apis": [
+    "POST /m6/employees",
+    "GET /m6/employees",
+    "GET /m6/employees/:id",
+    "GET /m6/employees/department/:departmentId",
+    "PUT /m6/employees/:id",
+    "DELETE /m6/employees/:id"
+  ]
+}

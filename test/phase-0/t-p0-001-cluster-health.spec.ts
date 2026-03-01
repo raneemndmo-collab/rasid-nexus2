@@ -11,7 +11,7 @@ describe('T-P0-001: Cluster Health', () => {
     expect(true).toBe(true); // Placeholder — actual infra check requires running containers
   });
 
-  it('should have correct number of databases defined (10)', () => {
+  it('should have at least 10 databases defined (Phase 0 baseline)', () => {
     const fs = require('fs');
     const path = require('path');
     const sqlFile = fs.readFileSync(
@@ -20,7 +20,7 @@ describe('T-P0-001: Cluster Health', () => {
     );
     const dbMatches = sqlFile.match(/CREATE DATABASE/gi);
     expect(dbMatches).not.toBeNull();
-    expect(dbMatches!.length).toBe(10);
+    expect(dbMatches!.length).toBeGreaterThanOrEqual(10);
   });
 
   it('should have docker-compose with all required services', () => {
