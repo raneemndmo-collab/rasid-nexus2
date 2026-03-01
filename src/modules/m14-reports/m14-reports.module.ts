@@ -4,10 +4,13 @@ import { ReportDefinitionOrmEntity, ReportExecutionOrmEntity, ScheduledReportOrm
 import { ReportDefinitionRepositoryImpl, ReportExecutionRepositoryImpl, ScheduledReportRepositoryImpl } from './infrastructure/persistence/repositories/report.repository';
 import { ReportService } from './application/services/report.service';
 import { ReportController } from './presentation/controllers/report.controller';
+import { AIService } from '../m11-ai/application/services/ai.service';
+import { M11AIModule } from '../m11-ai/m11-ai.module';
 
 @Module({
   imports: [
     TypeOrmModule.forFeature([ReportDefinitionOrmEntity, ReportExecutionOrmEntity, ScheduledReportOrmEntity]),
+    M11AIModule,
   ],
   controllers: [ReportController],
   providers: [
@@ -15,6 +18,7 @@ import { ReportController } from './presentation/controllers/report.controller';
     { provide: 'IReportDefinitionRepository', useClass: ReportDefinitionRepositoryImpl },
     { provide: 'IReportExecutionRepository', useClass: ReportExecutionRepositoryImpl },
     { provide: 'IScheduledReportRepository', useClass: ScheduledReportRepositoryImpl },
+    { provide: 'ISummarization', useExisting: AIService },
   ],
   exports: [ReportService],
 })

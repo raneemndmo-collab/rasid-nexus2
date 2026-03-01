@@ -2,6 +2,7 @@ import { Injectable, Inject, NotFoundException } from '@nestjs/common';
 import { IReportDefinitionRepository, IReportExecutionRepository, IScheduledReportRepository } from '../../domain/interfaces/report-repository.interface';
 import { ReportDefinition, ReportExecution, ReportStatus, ReportFormat, ScheduledReport } from '../../domain/entities/report.entity';
 import { IEventBus, EVENT_BUS } from '../../../../shared/domain/interfaces/event-bus.interface';
+import { ISummarization } from '../../../m11-ai/domain/entities/ai.entity';
 import { REPORT_EVENTS } from '../../domain/events/report.events';
 import * as crypto from 'crypto';
 
@@ -41,6 +42,7 @@ export class ReportService {
     @Inject('IReportExecutionRepository') private readonly execRepo: IReportExecutionRepository,
     @Inject('IScheduledReportRepository') private readonly schedRepo: IScheduledReportRepository,
     @Inject(EVENT_BUS) private readonly eventBus: IEventBus,
+    @Inject('ISummarization') private readonly summarizer: ISummarization,
   ) {}
 
   async createDefinition(dto: CreateReportDefinitionDto): Promise<ReportDefinition> {
@@ -98,9 +100,21 @@ export class ReportService {
       const resultFileId = crypto.randomUUID();
       const rowCount = Math.floor(Math.random() * 1000) + 1;
 
+      // AI-Assisted Summary via M11 ISummarization
+      let aiSummary: string | undefined;
+      try {
+        const reportData = JSON.stringify({ name: definition.name, module: definition.module, rowCount, format: dto.format });
+        const summaryResult = await this.summarizer.summarize(dto.tenantId, reportData, { style: 'brief' });
+        aiSummary = summaryResult.summary;
+      } catch {
+        // AI summary is optional — if it fails, report still succeeds
+        aiSummary = undefined;
+      }
+
       const completed = await this.execRepo.update(saved.id, dto.tenantId, {
         status: ReportStatus.COMPLETED,
         resultFileId,
+        aiSummary,
         rowCount,
         completedAt: new Date(),
       });

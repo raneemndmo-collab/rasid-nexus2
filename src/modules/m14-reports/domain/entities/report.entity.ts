@@ -52,6 +52,7 @@ export interface ReportExecution {
   format: ReportFormat;
   parameters: Record<string, unknown>;
   resultFileId?: string;
+  aiSummary?: string;
   rowCount?: number;
   executedBy: string;
   startedAt: Date;

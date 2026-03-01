@@ -3,6 +3,9 @@
 -- 25 PostgreSQL databases with isolated users and RLS
 -- ═══════════════════════════════════════════════════════════
 
+-- ─── Admin Role ───
+CREATE ROLE rasid_admin WITH LOGIN SUPERUSER PASSWORD 'rasid_super_secret';
+
 -- ─── Phase 0 Users ───
 CREATE USER k1_user WITH PASSWORD 'k1_pass';
 CREATE USER k2_user WITH PASSWORD 'k2_pass';
