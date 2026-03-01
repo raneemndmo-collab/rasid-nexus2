@@ -1,0 +1,28 @@
+{
+  "moduleId": "M12",
+  "name": "User Notifications",
+  "version": "1.0.0",
+  "phase": 2,
+  "type": "business",
+  "database": "m12_notifications_db",
+  "namespace": "user_notification.*",
+  "dependencies": ["K1", "K2", "K5", "K8"],
+  "events_published": [
+    "user_notification.sent",
+    "user_notification.read",
+    "user_notification.archived"
+  ],
+  "events_consumed": ["*"],
+  "apis": [
+    "POST /m12/notifications",
+    "GET /m12/notifications/user/:userId",
+    "GET /m12/notifications/user/:userId/unread",
+    "GET /m12/notifications/user/:userId/unread/count",
+    "PUT /m12/notifications/:id/read",
+    "PUT /m12/notifications/user/:userId/read-all",
+    "PUT /m12/notifications/:id/archive",
+    "DELETE /m12/notifications/:id",
+    "POST /m12/notifications/subscriptions",
+    "GET /m12/notifications/subscriptions/:userId"
+  ]
+}

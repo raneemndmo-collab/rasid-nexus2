@@ -1,0 +1,29 @@
+{
+  "moduleId": "M9",
+  "name": "Payroll",
+  "version": "1.0.0",
+  "phase": 2,
+  "type": "business",
+  "database": "m9_payroll_db",
+  "namespace": "payroll.*",
+  "dependencies": ["K1", "K2", "K3", "K5"],
+  "events_published": [
+    "payroll.calculated",
+    "payroll.approved",
+    "payroll.paid",
+    "payroll.cancelled",
+    "payroll.payslip.generated"
+  ],
+  "events_consumed": ["employee.created", "employee.terminated"],
+  "apis": [
+    "POST /m9/payroll/calculate",
+    "PUT /m9/payroll/:id/approve",
+    "POST /m9/payroll/:id/execute",
+    "GET /m9/payroll/runs",
+    "GET /m9/payroll/runs/:id",
+    "GET /m9/payroll/payslips/:id",
+    "GET /m9/payroll/payslips/employee/:employeeId",
+    "GET /m9/payroll/structures",
+    "POST /m9/payroll/structures"
+  ]
+}

@@ -1,9 +1,9 @@
 -- ═══════════════════════════════════════════════════════════
--- Rasid Platform — Phase 0+1: Database Initialization
--- 16 PostgreSQL databases with isolated users and RLS
+-- Rasid Platform — Phase 0+1+2: Database Initialization
+-- 25 PostgreSQL databases with isolated users and RLS
 -- ═══════════════════════════════════════════════════════════
 
--- ─── Create Users ───
+-- ─── Phase 0 Users ───
 CREATE USER k1_user WITH PASSWORD 'k1_pass';
 CREATE USER k2_user WITH PASSWORD 'k2_pass';
 CREATE USER k3_user WITH PASSWORD 'k3_pass';
@@ -23,7 +23,18 @@ CREATE USER m6_user WITH PASSWORD 'm6_pass';
 CREATE USER m7_user WITH PASSWORD 'm7_pass';
 CREATE USER m8_user WITH PASSWORD 'm8_pass';
 
--- ─── Databases ───
+-- ─── Phase 2 Users ───
+CREATE USER k8_user WITH PASSWORD 'k8_pass';
+CREATE USER k9_user WITH PASSWORD 'k9_pass';
+CREATE USER k10_user WITH PASSWORD 'k10_pass';
+CREATE USER m9_user WITH PASSWORD 'm9_pass';
+CREATE USER m10_user WITH PASSWORD 'm10_pass';
+CREATE USER m11_user WITH PASSWORD 'm11_pass';
+CREATE USER m12_user WITH PASSWORD 'm12_pass';
+CREATE USER m13_user WITH PASSWORD 'm13_pass';
+CREATE USER m14_user WITH PASSWORD 'm14_pass';
+
+-- ─── Phase 0 Databases ───
 CREATE DATABASE k1_auth_db OWNER k1_user;
 CREATE DATABASE k2_tenant_db OWNER k2_user;
 CREATE DATABASE k3_audit_db OWNER k3_user;
@@ -43,7 +54,18 @@ CREATE DATABASE m6_employees_db OWNER m6_user;
 CREATE DATABASE m7_attendance_db OWNER m7_user;
 CREATE DATABASE m8_leave_db OWNER m8_user;
 
--- ─── Revoke cross-database access ───
+-- ─── Phase 2 Databases ───
+CREATE DATABASE k8_storage_db OWNER k8_user;
+CREATE DATABASE k9_monitoring_db OWNER k9_user;
+CREATE DATABASE k10_registry_db OWNER k10_user;
+CREATE DATABASE m9_payroll_db OWNER m9_user;
+CREATE DATABASE m10_settings_db OWNER m10_user;
+CREATE DATABASE m11_ai_db OWNER m11_user;
+CREATE DATABASE m12_notifications_db OWNER m12_user;
+CREATE DATABASE m13_files_db OWNER m13_user;
+CREATE DATABASE m14_reports_db OWNER m14_user;
+
+-- ─── Revoke cross-database access (Phase 0) ───
 REVOKE ALL ON DATABASE k1_auth_db FROM PUBLIC;
 REVOKE ALL ON DATABASE k2_tenant_db FROM PUBLIC;
 REVOKE ALL ON DATABASE k3_audit_db FROM PUBLIC;
@@ -54,6 +76,8 @@ REVOKE ALL ON DATABASE m2_tenants_db FROM PUBLIC;
 REVOKE ALL ON DATABASE m3_roles_db FROM PUBLIC;
 REVOKE ALL ON DATABASE m4_permissions_db FROM PUBLIC;
 REVOKE ALL ON DATABASE m30_actions_db FROM PUBLIC;
+
+-- ─── Revoke cross-database access (Phase 1) ───
 REVOKE ALL ON DATABASE k6_notification_db FROM PUBLIC;
 REVOKE ALL ON DATABASE k7_scheduler_db FROM PUBLIC;
 REVOKE ALL ON DATABASE m5_departments_db FROM PUBLIC;
@@ -61,7 +85,18 @@ REVOKE ALL ON DATABASE m6_employees_db FROM PUBLIC;
 REVOKE ALL ON DATABASE m7_attendance_db FROM PUBLIC;
 REVOKE ALL ON DATABASE m8_leave_db FROM PUBLIC;
 
--- Grant connect only to respective owners
+-- ─── Revoke cross-database access (Phase 2) ───
+REVOKE ALL ON DATABASE k8_storage_db FROM PUBLIC;
+REVOKE ALL ON DATABASE k9_monitoring_db FROM PUBLIC;
+REVOKE ALL ON DATABASE k10_registry_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m9_payroll_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m10_settings_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m11_ai_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m12_notifications_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m13_files_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m14_reports_db FROM PUBLIC;
+
+-- ─── Grant connect (Phase 0) ───
 GRANT CONNECT ON DATABASE k1_auth_db TO k1_user;
 GRANT CONNECT ON DATABASE k2_tenant_db TO k2_user;
 GRANT CONNECT ON DATABASE k3_audit_db TO k3_user;
@@ -72,9 +107,22 @@ GRANT CONNECT ON DATABASE m2_tenants_db TO m2_user;
 GRANT CONNECT ON DATABASE m3_roles_db TO m3_user;
 GRANT CONNECT ON DATABASE m4_permissions_db TO m4_user;
 GRANT CONNECT ON DATABASE m30_actions_db TO m30_user;
+
+-- ─── Grant connect (Phase 1) ───
 GRANT CONNECT ON DATABASE k6_notification_db TO k6_user;
 GRANT CONNECT ON DATABASE k7_scheduler_db TO k7_user;
 GRANT CONNECT ON DATABASE m5_departments_db TO m5_user;
 GRANT CONNECT ON DATABASE m6_employees_db TO m6_user;
 GRANT CONNECT ON DATABASE m7_attendance_db TO m7_user;
 GRANT CONNECT ON DATABASE m8_leave_db TO m8_user;
+
+-- ─── Grant connect (Phase 2) ───
+GRANT CONNECT ON DATABASE k8_storage_db TO k8_user;
+GRANT CONNECT ON DATABASE k9_monitoring_db TO k9_user;
+GRANT CONNECT ON DATABASE k10_registry_db TO k10_user;
+GRANT CONNECT ON DATABASE m9_payroll_db TO m9_user;
+GRANT CONNECT ON DATABASE m10_settings_db TO m10_user;
+GRANT CONNECT ON DATABASE m11_ai_db TO m11_user;
+GRANT CONNECT ON DATABASE m12_notifications_db TO m12_user;
+GRANT CONNECT ON DATABASE m13_files_db TO m13_user;
+GRANT CONNECT ON DATABASE m14_reports_db TO m14_user;

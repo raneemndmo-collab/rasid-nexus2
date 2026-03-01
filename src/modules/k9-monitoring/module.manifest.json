@@ -1,0 +1,13 @@
+{
+  "moduleId": "k9-monitoring",
+  "name": "K9 Monitoring Service",
+  "version": "1.0.0",
+  "phase": 2,
+  "type": "kernel",
+  "database": "k9_monitoring_db",
+  "dependencies": ["k1-auth", "k2-tenant", "k5-events"],
+  "events": {
+    "publishes": ["monitoring.metric.recorded", "monitoring.alert.fired", "monitoring.alert.acknowledged", "monitoring.alert.resolved", "monitoring.health.failed"],
+    "subscribes": []
+  }
+}

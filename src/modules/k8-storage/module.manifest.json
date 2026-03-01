@@ -1,0 +1,13 @@
+{
+  "moduleId": "k8-storage",
+  "name": "K8 Storage Service",
+  "version": "1.0.0",
+  "phase": 2,
+  "type": "kernel",
+  "database": "k8_storage_db",
+  "dependencies": ["k1-auth", "k2-tenant", "k3-audit", "k5-events"],
+  "events": {
+    "publishes": ["storage.object.uploaded", "storage.object.downloaded", "storage.object.deleted", "storage.quota.exceeded"],
+    "subscribes": []
+  }
+}
