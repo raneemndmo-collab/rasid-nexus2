@@ -26,7 +26,7 @@ export class NatsEventBusService implements IEventBus, OnModuleInit, OnModuleDes
 
   async onModuleInit(): Promise<void> {
     try {
-      const natsUrl = this.config.get<string>('NATS_URL', 'nats://localhost:4222');
+      const natsUrl = this.config.getOrThrow<string>('NATS_URL');
       this.connection = await connect({ servers: natsUrl });
       this.jsm = await this.connection.jetstreamManager();
       this.jetstream = this.connection.jetstream();

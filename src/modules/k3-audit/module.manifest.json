@@ -1,5 +1,6 @@
 {
   "moduleId": "K3",
+  "version": "0.1.0",
   "name": "Audit",
   "description": "Audit middleware, append-only log, audit query API",
   "phase": 0,

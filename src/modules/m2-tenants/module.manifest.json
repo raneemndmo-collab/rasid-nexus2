@@ -1,5 +1,6 @@
 {
   "moduleId": "M2",
+  "version": "0.1.0",
   "name": "Tenants",
   "description": "Tenant CRUD, lifecycle management, settings",
   "phase": 0,

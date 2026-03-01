@@ -1,0 +1,24 @@
+# ═══════════════════════════════════════════════════════════
+# RASID PLATFORM — CODEOWNERS
+# Kernel modules (K1-K5) are frozen after Phase 0 approval.
+# Any modification requires [AMENDMENT-NNN] approval.
+# ═══════════════════════════════════════════════════════════
+
+# Kernel modules — require Chief Architect approval
+/src/modules/k1-auth/       @raneemndmo-collab
+/src/modules/k2-tenant/     @raneemndmo-collab
+/src/modules/k3-audit/      @raneemndmo-collab
+/src/modules/k4-config/     @raneemndmo-collab
+/src/modules/k5-events/     @raneemndmo-collab
+
+# Shared kernel code — require Chief Architect approval
+/src/shared/                @raneemndmo-collab
+
+# Infrastructure — require Chief Architect approval
+/infrastructure/            @raneemndmo-collab
+
+# CI/CD — require Chief Architect approval
+/.github/workflows/         @raneemndmo-collab
+
+# Database schemas — require Chief Architect approval
+/infrastructure/database/   @raneemndmo-collab

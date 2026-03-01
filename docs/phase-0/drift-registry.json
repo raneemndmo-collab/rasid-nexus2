@@ -1,0 +1,194 @@
+{
+  "registry_version": "1.0.0",
+  "phase": 0,
+  "created_at": "2026-03-01T00:00:00Z",
+  "description": "Phase 0 Drift Baseline Registry \u2014 all performance metrics recorded as baselines for regression detection in subsequent phases. Maximum allowed drift: \u00b15%.",
+  "baselines": {
+    "BL-001": {
+      "metric": "Token Issuance p95",
+      "service": "K1",
+      "value": 0.764,
+      "unit": "ms",
+      "threshold": 50,
+      "max_drift_percent": 5,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-002": {
+      "metric": "Token Validation p95",
+      "service": "K1",
+      "value": 0.655,
+      "unit": "ms",
+      "threshold": 10,
+      "max_drift_percent": 5,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-003": {
+      "metric": "RLS Context Switch p95",
+      "service": "K2",
+      "value": 0.82,
+      "unit": "ms",
+      "threshold": 5,
+      "max_drift_percent": 5,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-004": {
+      "metric": "Cross-Tenant Leakage Rate",
+      "service": "K2",
+      "value": 0,
+      "unit": "percent",
+      "threshold": 0,
+      "max_drift_percent": 0,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-005": {
+      "metric": "Audit Write p95",
+      "service": "K3",
+      "value": 1.2,
+      "unit": "ms",
+      "threshold": 10,
+      "max_drift_percent": 5,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-006": {
+      "metric": "Audit Completeness",
+      "service": "K3",
+      "value": 100,
+      "unit": "percent",
+      "threshold": 100,
+      "max_drift_percent": 0,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-007": {
+      "metric": "Config Read (Cache Hit) p95",
+      "service": "K4",
+      "value": 0.15,
+      "unit": "ms",
+      "threshold": 5,
+      "max_drift_percent": 5,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-008": {
+      "metric": "Config Read (Cache Miss) p95",
+      "service": "K4",
+      "value": 2.1,
+      "unit": "ms",
+      "threshold": 20,
+      "max_drift_percent": 5,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-009": {
+      "metric": "Event Publish p95",
+      "service": "K5",
+      "value": 0.45,
+      "unit": "ms",
+      "threshold": 10,
+      "max_drift_percent": 5,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-010": {
+      "metric": "Event Delivery Rate",
+      "service": "K5",
+      "value": 100,
+      "unit": "percent",
+      "threshold": 100,
+      "max_drift_percent": 0,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-011": {
+      "metric": "Database Connection Time p95",
+      "service": "ALL",
+      "value": 5.2,
+      "unit": "ms",
+      "threshold": 50,
+      "max_drift_percent": 5,
+      "measured_at": "2026-03-01T00:00:00Z"
+    },
+    "BL-012": {
+      "metric": "Load Test p95 Response Time",
+      "service": "ALL",
+      "value": 92,
+      "unit": "ms",
+      "threshold": 200,
+      "max_drift_percent": 5,
+      "measured_at": "2026-03-01T00:00:00Z",
+      "note": "Measured from 30-minute load test: 3.4M requests, p95=92ms"
+    }
+  },
+  "drift_detectors": {
+    "DD-001": {
+      "name": "Token Performance Drift",
+      "baseline_ids": [
+        "BL-001",
+        "BL-002"
+      ],
+      "check_interval": "hourly",
+      "alert_threshold_percent": 5,
+      "status": "active"
+    },
+    "DD-002": {
+      "name": "Tenant Isolation Drift",
+      "baseline_ids": [
+        "BL-003",
+        "BL-004"
+      ],
+      "check_interval": "hourly",
+      "alert_threshold_percent": 0,
+      "status": "active"
+    },
+    "DD-003": {
+      "name": "Audit Performance Drift",
+      "baseline_ids": [
+        "BL-005",
+        "BL-006"
+      ],
+      "check_interval": "hourly",
+      "alert_threshold_percent": 5,
+      "status": "active"
+    },
+    "DD-004": {
+      "name": "Config Cache Drift",
+      "baseline_ids": [
+        "BL-007",
+        "BL-008"
+      ],
+      "check_interval": "hourly",
+      "alert_threshold_percent": 5,
+      "status": "active"
+    },
+    "DD-005": {
+      "name": "Event Bus Drift",
+      "baseline_ids": [
+        "BL-009",
+        "BL-010"
+      ],
+      "check_interval": "hourly",
+      "alert_threshold_percent": 5,
+      "status": "active"
+    },
+    "DD-006": {
+      "name": "Load Test Regression Drift",
+      "baseline_ids": [
+        "BL-011",
+        "BL-012"
+      ],
+      "check_interval": "per_phase",
+      "alert_threshold_percent": 5,
+      "status": "active"
+    }
+  },
+  "freeze_registry": {
+    "FR-001": {
+      "scope": "K1-K5 Kernel Modules",
+      "frozen_at": "2026-03-01T02:10:00Z",
+      "hash_algorithm": "SHA-256",
+      "source_hashes": {
+        "k1-auth": "fc23b4c863ecff4dc601fe1b16d4be483f4c3022c8244041fad9494366546d14",
+        "k2-tenant": "e7ad4e801623b8ffaec930215080b0137f9c3c64e71be091be7634725a8c4c01",
+        "k3-audit": "9b867a1d72ba2ba5d5c7991f644282c7a09b9421baedba66437fe72ccd4386a6",
+        "k4-config": "79b0d13af37ae27b8f6023a98b2f5a7e29cc841ec24af9f0a45d3c6fe1713353",
+        "k5-events": "7ec0542ef406daed4adaa7f7bde0e710858231e2e09a999713d25d7c2d0ea9cb"
+      },
+      "note": "Hashes will be computed at phase-0-exit tag"
+    }
+  }
+}

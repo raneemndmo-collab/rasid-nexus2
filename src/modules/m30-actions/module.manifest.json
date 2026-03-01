@@ -1,5 +1,6 @@
 {
   "moduleId": "M30",
+  "version": "0.1.0",
   "name": "Action Registry",
   "description": "Central registry for all platform actions, validation, ACT_UNREGISTERED guard",
   "phase": 0,

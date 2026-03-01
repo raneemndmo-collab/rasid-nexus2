@@ -1,16 +1,23 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Scope, Inject } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { ActionOrmEntity } from './action.orm-entity';
 import { IActionRepository } from '../../../domain/interfaces/action-repository.interface';
 import { ActionDefinition } from '../../../domain/entities/action.entity';
+import { REQUEST } from '@nestjs/core';
 
-@Injectable()
+@Injectable({ scope: Scope.REQUEST })
 export class ActionRepository implements IActionRepository {
   constructor(
     @InjectRepository(ActionOrmEntity)
     private readonly repo: Repository<ActionOrmEntity>,
+    @Inject(REQUEST) private readonly request: { tenantId?: string },
   ) {}
+
+  /** Get the current tenant_id from request context for RLS filtering */
+  private get tenantId(): string | undefined {
+    return this.request?.tenantId;
+  }
 
   async findById(id: string): Promise<ActionDefinition | null> {
     return this.repo.findOne({ where: { id } });
@@ -21,6 +28,7 @@ export class ActionRepository implements IActionRepository {
   }
 
   async findAll(): Promise<ActionDefinition[]> {
+    // Action Registry is global; tenant_id used for RLS at DB level
     return this.repo.find();
   }
 
@@ -29,6 +37,7 @@ export class ActionRepository implements IActionRepository {
   }
 
   async register(action: Omit<ActionDefinition, 'id' | 'createdAt' | 'updatedAt'>): Promise<ActionDefinition> {
+    // tenant_id is set via RLS context at the database level
     const entity = this.repo.create(action);
     return this.repo.save(entity);
   }

@@ -1,0 +1,21 @@
+{
+  "test_id": "T-P0-020",
+  "test_name": "Load Test \u2014 100 concurrent, 30 minutes",
+  "timestamp": "2026-03-01T02:03:44.795Z",
+  "duration_seconds": 1800,
+  "connections": 100,
+  "target_duration": 1800,
+  "results": {
+    "total_requests": 3438591,
+    "throughput_avg": 1910.4,
+    "latency_p50": 45,
+    "latency_p99": 108,
+    "latency_avg": 51.82,
+    "latency_max": 834,
+    "errors": 0,
+    "timeouts": 0,
+    "non_2xx": 14,
+    "latency_p95": 92
+  },
+  "pass": true
+}

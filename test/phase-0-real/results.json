@@ -1,0 +1,449 @@
+[
+  {
+    "id": "T-P0-001",
+    "name": "Cluster Health",
+    "status": "PASS",
+    "duration_ms": 70,
+    "details": "3/3 services healthy",
+    "subtests": [
+      {
+        "name": "PostgreSQL connectivity",
+        "status": "PASS",
+        "details": "Connected successfully"
+      },
+      {
+        "name": "Redis connectivity",
+        "status": "PASS",
+        "details": "ping=PONG"
+      },
+      {
+        "name": "NATS connectivity",
+        "status": "PASS",
+        "details": "Connected successfully"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-002",
+    "name": "Database Connectivity",
+    "status": "PASS",
+    "duration_ms": 148,
+    "details": "10/10 databases connected",
+    "subtests": [
+      {
+        "name": "k1_auth_db connectivity",
+        "status": "PASS",
+        "details": "db=k1_auth_db, user=k1_user"
+      },
+      {
+        "name": "k2_tenant_db connectivity",
+        "status": "PASS",
+        "details": "db=k2_tenant_db, user=k2_user"
+      },
+      {
+        "name": "k3_audit_db connectivity",
+        "status": "PASS",
+        "details": "db=k3_audit_db, user=k3_user"
+      },
+      {
+        "name": "k4_config_db connectivity",
+        "status": "PASS",
+        "details": "db=k4_config_db, user=k4_user"
+      },
+      {
+        "name": "k5_events_db connectivity",
+        "status": "PASS",
+        "details": "db=k5_events_db, user=k5_user"
+      },
+      {
+        "name": "m1_auth_users_db connectivity",
+        "status": "PASS",
+        "details": "db=m1_auth_users_db, user=m1_user"
+      },
+      {
+        "name": "m2_tenants_db connectivity",
+        "status": "PASS",
+        "details": "db=m2_tenants_db, user=m2_user"
+      },
+      {
+        "name": "m3_roles_db connectivity",
+        "status": "PASS",
+        "details": "db=m3_roles_db, user=m3_user"
+      },
+      {
+        "name": "m4_permissions_db connectivity",
+        "status": "PASS",
+        "details": "db=m4_permissions_db, user=m4_user"
+      },
+      {
+        "name": "m30_actions_db connectivity",
+        "status": "PASS",
+        "details": "db=m30_actions_db, user=m30_user"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-003",
+    "name": "RLS Enforcement",
+    "status": "PASS",
+    "duration_ms": 51,
+    "details": "6/6 checks passed",
+    "subtests": [
+      {
+        "name": "RLS table creation",
+        "status": "PASS",
+        "details": "Table with RLS created"
+      },
+      {
+        "name": "Insert as Tenant A",
+        "status": "PASS",
+        "details": "2 rows inserted"
+      },
+      {
+        "name": "Insert as Tenant B",
+        "status": "PASS",
+        "details": "1 row inserted"
+      },
+      {
+        "name": "Tenant A isolation",
+        "status": "PASS",
+        "details": "rows=2, allTenantA=true"
+      },
+      {
+        "name": "Tenant B isolation",
+        "status": "PASS",
+        "details": "rows=1, allTenantB=true"
+      },
+      {
+        "name": "Cross-tenant insert blocked",
+        "status": "PASS",
+        "details": "Correctly blocked: new row violates row-level security policy for table \"rls_test_users\""
+      }
+    ]
+  },
+  {
+    "id": "T-P0-004",
+    "name": "K1 Token Lifecycle",
+    "status": "PASS",
+    "duration_ms": 145,
+    "details": "7/7 checks passed",
+    "subtests": [
+      {
+        "name": "Token issuance",
+        "status": "PASS",
+        "details": "Token length: 311"
+      },
+      {
+        "name": "Token validation",
+        "status": "PASS",
+        "details": "sub=ef7a0bc6-3e83-4113-b993-e9b71953e918"
+      },
+      {
+        "name": "Expired token rejected",
+        "status": "PASS",
+        "details": "Correctly rejected"
+      },
+      {
+        "name": "Forged token rejected",
+        "status": "PASS",
+        "details": "Correctly rejected"
+      },
+      {
+        "name": "Wrong secret rejected",
+        "status": "PASS",
+        "details": "Correctly rejected"
+      },
+      {
+        "name": "Token stored in K1 DB",
+        "status": "PASS",
+        "details": "rows=1"
+      },
+      {
+        "name": "Token revocation",
+        "status": "PASS",
+        "details": "is_revoked=true"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-005",
+    "name": "K2 Cross-Tenant Isolation (DT-001)",
+    "status": "PASS",
+    "duration_ms": 98,
+    "details": "2/2 checks passed",
+    "subtests": [
+      {
+        "name": "m3_roles_db tenant isolation",
+        "status": "PASS",
+        "details": "A_rows=1, B_rows=1"
+      },
+      {
+        "name": "m4_permissions_db tenant isolation",
+        "status": "PASS",
+        "details": "A_rows=1, B_rows=1"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-006",
+    "name": "K3 Audit Completeness (DT-003)",
+    "status": "PASS",
+    "duration_ms": 30,
+    "details": "3/3 checks passed",
+    "subtests": [
+      {
+        "name": "Audit table creation",
+        "status": "PASS",
+        "details": "Table created with all required columns"
+      },
+      {
+        "name": "All CRUD operations audited",
+        "status": "PASS",
+        "details": "4 audit entries for 4 operations"
+      },
+      {
+        "name": "Required fields present",
+        "status": "PASS",
+        "details": "Fields checked: tenant_id, user_id, action, entity_type, correlation_id, created_at"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-007",
+    "name": "K3 Audit Immutability",
+    "status": "PASS",
+    "duration_ms": 33,
+    "details": "3/3 checks passed",
+    "subtests": [
+      {
+        "name": "Audit INSERT allowed",
+        "status": "PASS",
+        "details": "Insert succeeded"
+      },
+      {
+        "name": "Audit UPDATE blocked",
+        "status": "PASS",
+        "details": "Correctly blocked: Audit logs are immutable — UPDATE and DELETE are forbidden"
+      },
+      {
+        "name": "Audit DELETE blocked",
+        "status": "PASS",
+        "details": "Correctly blocked: Audit logs are immutable — UPDATE and DELETE are forbidden"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-008",
+    "name": "K4 Config Cache",
+    "status": "PASS",
+    "duration_ms": 29,
+    "details": "5/5 checks passed",
+    "subtests": [
+      {
+        "name": "Config write to DB",
+        "status": "PASS",
+        "details": "Config stored in PostgreSQL"
+      },
+      {
+        "name": "Config cached in Redis",
+        "status": "PASS",
+        "details": "TTL=300s"
+      },
+      {
+        "name": "Config read from cache",
+        "status": "PASS",
+        "details": "duration=0.254ms, match=true"
+      },
+      {
+        "name": "Cache invalidation on update",
+        "status": "PASS",
+        "details": "afterDel=null"
+      },
+      {
+        "name": "Config read from DB (uncached)",
+        "status": "PASS",
+        "details": "duration=0.913ms"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-009",
+    "name": "K5 Event Delivery (DT-005)",
+    "status": "PASS",
+    "duration_ms": 1046,
+    "details": "3/3 checks passed",
+    "subtests": [
+      {
+        "name": "Event publish/subscribe",
+        "status": "PASS",
+        "details": "received=3/3"
+      },
+      {
+        "name": "JetStream persistence",
+        "status": "PASS",
+        "details": "Message persisted and retrieved"
+      },
+      {
+        "name": "Event stored in K5 DB",
+        "status": "PASS",
+        "details": "rows=1"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-010/011/012",
+    "name": "Schema Validation + DLQ + Idempotency",
+    "status": "PASS",
+    "duration_ms": 45,
+    "details": "3/3 checks passed",
+    "subtests": [
+      {
+        "name": "T-P0-010: Schema validation table",
+        "status": "PASS",
+        "details": "Schema registered for user.created"
+      },
+      {
+        "name": "T-P0-011: DLQ storage",
+        "status": "PASS",
+        "details": "DLQ entry stored with attempts=3"
+      },
+      {
+        "name": "T-P0-012: Idempotency (duplicate rejected)",
+        "status": "PASS",
+        "details": "Duplicate correctly rejected by PK constraint"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-014/015/016",
+    "name": "M1 User CRUD + Password + M2 Tenant",
+    "status": "PASS",
+    "duration_ms": 1116,
+    "details": "9/9 checks passed",
+    "subtests": [
+      {
+        "name": "M1 User CREATE",
+        "status": "PASS",
+        "details": "id=1410c7bb-9894-463b-bdcd-fcbf17a527bb"
+      },
+      {
+        "name": "M1 User READ",
+        "status": "PASS",
+        "details": "email=user@rasid.sa"
+      },
+      {
+        "name": "M1 Password bcrypt verify",
+        "status": "PASS",
+        "details": "bcrypt compare=true"
+      },
+      {
+        "name": "M1 Wrong password rejected",
+        "status": "PASS",
+        "details": "bcrypt compare=false"
+      },
+      {
+        "name": "M1 User UPDATE",
+        "status": "PASS",
+        "details": "first_name=Updated"
+      },
+      {
+        "name": "M1 User DELETE",
+        "status": "PASS",
+        "details": "rows_after_delete=0"
+      },
+      {
+        "name": "M2 Tenant CREATE",
+        "status": "PASS",
+        "details": "slug=test-org"
+      },
+      {
+        "name": "M2 Duplicate slug rejected",
+        "status": "PASS",
+        "details": "Unique constraint enforced"
+      },
+      {
+        "name": "M2 Tenant suspend",
+        "status": "PASS",
+        "details": "is_active=false"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-017/018",
+    "name": "Permission Chain + Action Registry",
+    "status": "PASS",
+    "duration_ms": 93,
+    "details": "6/6 checks passed",
+    "subtests": [
+      {
+        "name": "Permission chain (user→role→permission)",
+        "status": "PASS",
+        "details": "permissions=[\"users.create\",\"users.read\"]"
+      },
+      {
+        "name": "Missing permission correctly denied",
+        "status": "PASS",
+        "details": "users.delete not in permissions"
+      },
+      {
+        "name": "M30 Action registration",
+        "status": "PASS",
+        "details": "Action registered"
+      },
+      {
+        "name": "M30 Registered action validated",
+        "status": "PASS",
+        "details": "found=1"
+      },
+      {
+        "name": "M30 Unregistered action rejected",
+        "status": "PASS",
+        "details": "found=0 (should be 0)"
+      },
+      {
+        "name": "M30 Action deactivation",
+        "status": "PASS",
+        "details": "active_after_deactivation=0"
+      }
+    ]
+  },
+  {
+    "id": "T-P0-025/026",
+    "name": "Credential Isolation",
+    "status": "PASS",
+    "duration_ms": 67,
+    "details": "6/6 checks passed",
+    "subtests": [
+      {
+        "name": "k1_user blocked from m1_auth_users_db",
+        "status": "PASS",
+        "details": "Correctly blocked: permission denied for database \"m1_auth_users_db\""
+      },
+      {
+        "name": "m1_user blocked from k3_audit_db",
+        "status": "PASS",
+        "details": "Correctly blocked: permission denied for database \"k3_audit_db\""
+      },
+      {
+        "name": "m30_user blocked from k1_auth_db",
+        "status": "PASS",
+        "details": "Correctly blocked: permission denied for database \"k1_auth_db\""
+      },
+      {
+        "name": "k1_user can access own k1_auth_db",
+        "status": "PASS",
+        "details": "Access granted"
+      },
+      {
+        "name": "m1_user can access own m1_auth_users_db",
+        "status": "PASS",
+        "details": "Access granted"
+      },
+      {
+        "name": "m30_user can access own m30_actions_db",
+        "status": "PASS",
+        "details": "Access granted"
+      }
+    ]
+  }
+]

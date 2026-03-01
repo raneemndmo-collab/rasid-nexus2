@@ -1,5 +1,6 @@
 {
   "moduleId": "M4",
+  "version": "0.1.0",
   "name": "Permissions",
   "description": "Permission CRUD, permission checking, module-based grouping",
   "phase": 0,

@@ -1,5 +1,6 @@
 {
   "moduleId": "K4",
+  "version": "0.1.0",
   "name": "Configuration",
   "description": "Config store, CRUD API, Redis cache, config change events",
   "phase": 0,

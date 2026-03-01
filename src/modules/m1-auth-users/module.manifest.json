@@ -1,5 +1,6 @@
 {
   "moduleId": "M1",
+  "version": "0.1.0",
   "name": "Auth Users",
   "description": "User CRUD, password hashing (bcrypt), role assignment, credential validation",
   "phase": 0,

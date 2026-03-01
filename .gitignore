@@ -30,4 +30,3 @@ logs/
 # Temp
 tmp/
 temp/
-.github/workflows/ci.yml

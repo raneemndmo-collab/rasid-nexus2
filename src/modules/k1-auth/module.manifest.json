@@ -1,5 +1,6 @@
 {
   "moduleId": "K1",
+  "version": "0.1.0",
   "name": "Auth Gateway",
   "description": "JWT issuance, validation, rate limiting, JWKS endpoint",
   "phase": 0,

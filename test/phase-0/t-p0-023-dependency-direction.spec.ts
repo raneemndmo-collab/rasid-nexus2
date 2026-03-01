@@ -2,8 +2,8 @@
  * T-P0-023: Dependency Direction
  * Verifies no reverse imports (Infrastructure → Domain = forbidden).
  */
-const { execSync } = require('child_process');
-const path = require('path');
+import { execSync } from 'child_process';
+import * as path from 'path';
 
 describe('T-P0-023: Dependency Direction', () => {
   it('should pass dependency direction check', () => {

@@ -1,5 +1,6 @@
 {
   "moduleId": "K5",
+  "version": "0.1.0",
   "name": "Event Bus",
   "description": "Event publishing, subscription, schema registry, DLQ, idempotency",
   "phase": 0,

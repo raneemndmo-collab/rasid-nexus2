@@ -1,5 +1,6 @@
 {
   "moduleId": "K2",
+  "version": "0.1.0",
   "name": "Tenant Isolation",
   "description": "TenantContext middleware, RLS policy generator, cross-tenant guard",
   "phase": 0,
