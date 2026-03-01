@@ -1,0 +1,13 @@
+{
+  "moduleId": "k10-registry",
+  "name": "K10 Service Registry",
+  "version": "1.0.0",
+  "phase": 2,
+  "type": "kernel",
+  "database": "k10_registry_db",
+  "dependencies": ["k1-auth", "k2-tenant", "k5-events"],
+  "events": {
+    "publishes": ["registry.service.registered", "registry.service.deregistered", "registry.service.status_changed"],
+    "subscribes": []
+  }
+}

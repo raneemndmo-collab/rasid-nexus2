@@ -14,6 +14,11 @@ import { K5EventsModule } from './modules/k5-events/k5-events.module';
 import { K6NotificationModule } from './modules/k6-notification/k6-notification.module';
 import { K7SchedulerModule } from './modules/k7-scheduler/k7-scheduler.module';
 
+// Kernel Modules — Phase 2
+import { K8StorageModule } from './modules/k8-storage/k8-storage.module';
+import { K9MonitoringModule } from './modules/k9-monitoring/k9-monitoring.module';
+import { K10RegistryModule } from './modules/k10-registry/k10-registry.module';
+
 // Business Modules — Phase 0
 import { M1AuthUsersModule } from './modules/m1-auth-users/m1-auth-users.module';
 import { M2TenantsModule } from './modules/m2-tenants/m2-tenants.module';
@@ -26,6 +31,14 @@ import { M5DepartmentsModule } from './modules/m5-departments/m5-departments.mod
 import { M6EmployeesModule } from './modules/m6-employees/m6-employees.module';
 import { M7AttendanceModule } from './modules/m7-attendance/m7-attendance.module';
 import { M8LeaveModule } from './modules/m8-leave/m8-leave.module';
+
+// Business Modules — Phase 2
+import { M9PayrollModule } from './modules/m9-payroll/m9-payroll.module';
+import { M10SettingsModule } from './modules/m10-settings/m10-settings.module';
+import { M11AIModule } from './modules/m11-ai/m11-ai.module';
+import { M12NotificationsModule } from './modules/m12-notifications/m12-notifications.module';
+import { M13FilesModule } from './modules/m13-files/m13-files.module';
+import { M14ReportsModule } from './modules/m14-reports/m14-reports.module';
 
 // ORM Entities — Phase 0
 import { AuthTokenOrmEntity } from './modules/k1-auth/infrastructure/persistence/repositories/auth-token.orm-entity';
@@ -45,6 +58,17 @@ import { DepartmentOrmEntity } from './modules/m5-departments/infrastructure/per
 import { EmployeeOrmEntity } from './modules/m6-employees/infrastructure/persistence/repositories/employee.orm-entity';
 import { AttendanceOrmEntity } from './modules/m7-attendance/infrastructure/persistence/repositories/attendance.orm-entity';
 import { LeaveRequestOrmEntity, LeaveBalanceOrmEntity } from './modules/m8-leave/infrastructure/persistence/repositories/leave.orm-entity';
+
+// ORM Entities — Phase 2
+import { StoredObjectOrmEntity, StorageQuotaOrmEntity } from './modules/k8-storage/infrastructure/persistence/repositories/storage.orm-entity';
+import { MetricRecordOrmEntity, AlertRuleOrmEntity, AlertOrmEntity, HealthCheckOrmEntity } from './modules/k9-monitoring/infrastructure/persistence/repositories/monitoring.orm-entity';
+import { ServiceRegistrationOrmEntity, ServiceEndpointOrmEntity, ServiceDependencyOrmEntity } from './modules/k10-registry/infrastructure/persistence/repositories/registry.orm-entity';
+import { SettingOrmEntity, SettingHistoryOrmEntity } from './modules/m10-settings/infrastructure/persistence/repositories/setting.orm-entity';
+import { AIModelOrmEntity, PromptTemplateOrmEntity, AIUsageLogOrmEntity, TenantAIBudgetOrmEntity, AIKillSwitchOrmEntity } from './modules/m11-ai/infrastructure/persistence/repositories/ai.orm-entity';
+import { UserNotificationOrmEntity, NotificationSubscriptionOrmEntity } from './modules/m12-notifications/infrastructure/persistence/repositories/user-notification.orm-entity';
+import { ManagedFileOrmEntity, FolderOrmEntity, FileShareOrmEntity } from './modules/m13-files/infrastructure/persistence/repositories/file.orm-entity';
+import { PayrollRunOrmEntity, PayrollItemOrmEntity, EmployeePayslipOrmEntity, SalaryStructureOrmEntity } from './modules/m9-payroll/infrastructure/persistence/repositories/payroll.orm-entity';
+import { ReportDefinitionOrmEntity, ReportExecutionOrmEntity, ScheduledReportOrmEntity } from './modules/m14-reports/infrastructure/persistence/repositories/report.orm-entity';
 
 // Health
 import { HealthController } from './health.controller';
@@ -88,6 +112,36 @@ import { HealthController } from './health.controller';
           AttendanceOrmEntity,
           LeaveRequestOrmEntity,
           LeaveBalanceOrmEntity,
+          // Phase 2 — Kernel
+          StoredObjectOrmEntity,
+          StorageQuotaOrmEntity,
+          MetricRecordOrmEntity,
+          AlertRuleOrmEntity,
+          AlertOrmEntity,
+          HealthCheckOrmEntity,
+          ServiceRegistrationOrmEntity,
+          ServiceEndpointOrmEntity,
+          ServiceDependencyOrmEntity,
+          // Phase 2 — Business
+          SettingOrmEntity,
+          SettingHistoryOrmEntity,
+          AIModelOrmEntity,
+          PromptTemplateOrmEntity,
+          AIUsageLogOrmEntity,
+          TenantAIBudgetOrmEntity,
+          AIKillSwitchOrmEntity,
+          UserNotificationOrmEntity,
+          NotificationSubscriptionOrmEntity,
+          ManagedFileOrmEntity,
+          FolderOrmEntity,
+          FileShareOrmEntity,
+          PayrollRunOrmEntity,
+          PayrollItemOrmEntity,
+          EmployeePayslipOrmEntity,
+          SalaryStructureOrmEntity,
+          ReportDefinitionOrmEntity,
+          ReportExecutionOrmEntity,
+          ScheduledReportOrmEntity,
         ],
         synchronize: config.get<string>('NODE_ENV') === 'development',
         logging: config.get<string>('NODE_ENV') === 'development',
@@ -104,6 +158,9 @@ import { HealthController } from './health.controller';
     K4ConfigModule,
     K6NotificationModule,  // Phase 1 kernel
     K7SchedulerModule,     // Phase 1 kernel
+    K8StorageModule,       // Phase 2 kernel
+    K9MonitoringModule,    // Phase 2 kernel
+    K10RegistryModule,     // Phase 2 kernel
 
     // Business modules — Phase 0
     M1AuthUsersModule,
@@ -117,6 +174,14 @@ import { HealthController } from './health.controller';
     M6EmployeesModule,
     M7AttendanceModule,
     M8LeaveModule,
+
+    // Business modules — Phase 2
+    M9PayrollModule,
+    M10SettingsModule,
+    M11AIModule,           // HIGH RISK — fully isolated
+    M12NotificationsModule,
+    M13FilesModule,
+    M14ReportsModule,
   ],
   controllers: [HealthController],
 })

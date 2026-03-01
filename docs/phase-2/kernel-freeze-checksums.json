@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-03-01T07:51:13.393Z",
+  "phase": 2,
+  "description": "SHA-256 checksums of all kernel modules (K1-K10) at Phase 2 exit",
+  "checksums": {
+    "k1-auth": "c9d5bf33cb3027d04a0ab5ea882b258c55c0a66e75b31e3625784156ab5da0ee",
+    "k2-tenant": "a9686a7611995c91531e5468c0cbb4f26af80be6eccbb1ad43e3bf435dd84bb9",
+    "k3-audit": "c9c45e1174654ce57f330b4569caaf22cd34d49f82db67d962aa69aff50d9d86",
+    "k4-config": "fe161a2227ed6a52aa62e0c937ebcec38cf44ed22e18129c8e5ba38afd93385c",
+    "k5-events": "2e8b3c3ca7a6a667af6e6de1197ef6a87530ac71ed90ccee9445547e4ecb3f17",
+    "k6-notification": "3f9bf41bbb77dea2f374fe20c651e017421d19f7f01ea6c11709c71b1352ef23",
+    "k7-scheduler": "73e1eacaee703048c7bc29ef542fbf46ffbb98e2eb10964cec0b1d986f967562",
+    "k8-storage": "944bcbe8216e0bf4d6eb81494c0c6d841c3edf4a0123c2dd679ee3555a00fd18",
+    "k9-monitoring": "3bc5e06cab1d7b9ebd9664bfef0bde23be4bf0e7cfeff8e0a3401f4210c07470",
+    "k10-registry": "05ed5d2803288bb819afdde23e007eefd16bc571ed6eb3a49db01c3e999978df"
+  }
+}

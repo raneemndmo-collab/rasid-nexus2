@@ -1,0 +1,29 @@
+{
+  "moduleId": "M14",
+  "name": "Reports",
+  "version": "1.0.0",
+  "phase": 2,
+  "type": "business",
+  "database": "m14_reports_db",
+  "namespace": "report.*",
+  "dependencies": ["K1", "K2", "K5", "K8"],
+  "events_published": [
+    "report.generated",
+    "report.failed",
+    "report.scheduled"
+  ],
+  "events_consumed": [],
+  "apis": [
+    "POST /m14/reports/definitions",
+    "GET /m14/reports/definitions",
+    "GET /m14/reports/definitions/module/:module",
+    "GET /m14/reports/definitions/:id",
+    "POST /m14/reports/execute",
+    "GET /m14/reports/executions",
+    "GET /m14/reports/executions/:id",
+    "POST /m14/reports/schedules",
+    "GET /m14/reports/schedules",
+    "PUT /m14/reports/schedules/:id/toggle",
+    "DELETE /m14/reports/schedules/:id"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "moduleId": "M11",
+  "name": "AI Engine",
+  "version": "1.0.0",
+  "phase": 2,
+  "type": "business",
+  "database": "m11_ai_db",
+  "namespace": "ai.*",
+  "dependencies": ["K1", "K2", "K5"],
+  "isolation": {
+    "AI-007": "No access to any business database — only m11_ai_db",
+    "AI-008": "No imports from any domain module",
+    "AI-009": "No direct model API exposure — all through provider plugins"
+  },
+  "capabilities": [
+    "ITextGeneration",
+    "IClassification",
+    "IVisionAnalysis",
+    "ISummarization",
+    "ISpeechSynthesis",
+    "IEmbedding"
+  ],
+  "events_published": [
+    "ai.request.completed",
+    "ai.request.failed",
+    "ai.fallback.triggered",
+    "ai.budget.warning",
+    "ai.budget.exceeded",
+    "ai.killswitch.activated",
+    "ai.killswitch.deactivated",
+    "ai.model.registered",
+    "ai.quality.degraded"
+  ],
+  "events_consumed": [],
+  "apis": [
+    "POST /m11/ai/text/generate",
+    "POST /m11/ai/text/classify",
+    "POST /m11/ai/vision/analyze",
+    "POST /m11/ai/text/summarize",
+    "POST /m11/ai/speech/synthesize",
+    "POST /m11/ai/embedding/embed",
+    "POST /m11/ai/killswitch/activate",
+    "POST /m11/ai/killswitch/deactivate",
+    "GET /m11/ai/killswitch/status",
+    "GET /m11/ai/budget",
+    "PUT /m11/ai/budget",
+    "GET /m11/ai/usage",
+    "GET /m11/ai/models",
+    "GET /m11/ai/prompts"
+  ]
+}

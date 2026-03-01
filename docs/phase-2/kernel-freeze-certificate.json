@@ -1,0 +1,26 @@
+{
+  "certificate_id": "KFC-P2-002",
+  "generated_at": "2026-03-01T12:00:00.000Z",
+  "phase": 2,
+  "type": "FULL_KERNEL_FREEZE",
+  "description": "FULL KERNEL FREEZE — K1-K10 ALL frozen. Any modification requires [AMENDMENT-NNN].",
+  "policy": "SA-007",
+  "status": "ACTIVE",
+  "effective_from": "phase-2-exit",
+  "amendment_required": true,
+  "amendment_format": "[AMENDMENT-NNN]",
+  "codeowners_enforced": true,
+  "kernels": [
+    { "id": "K1", "name": "Auth", "phase_built": 0, "status": "FROZEN", "db_healthy": true, "codeowners": true },
+    { "id": "K2", "name": "Tenant", "phase_built": 0, "status": "FROZEN", "db_healthy": true, "codeowners": true },
+    { "id": "K3", "name": "Audit", "phase_built": 0, "status": "FROZEN", "db_healthy": true, "codeowners": true },
+    { "id": "K4", "name": "Config", "phase_built": 0, "status": "FROZEN", "db_healthy": true, "codeowners": true },
+    { "id": "K5", "name": "Events", "phase_built": 0, "status": "FROZEN", "db_healthy": true, "codeowners": true },
+    { "id": "K6", "name": "Notification", "phase_built": 1, "status": "FROZEN", "db_healthy": true, "codeowners": true },
+    { "id": "K7", "name": "Scheduler", "phase_built": 1, "status": "FROZEN", "db_healthy": true, "codeowners": true },
+    { "id": "K8", "name": "Storage", "phase_built": 2, "status": "FROZEN", "db_healthy": true, "codeowners": true },
+    { "id": "K9", "name": "Monitoring", "phase_built": 2, "status": "FROZEN", "db_healthy": true, "codeowners": true },
+    { "id": "K10", "name": "Registry", "phase_built": 2, "status": "FROZEN", "db_healthy": true, "codeowners": true }
+  ],
+  "verification_method": "git diff analysis + SHA-256 checksums + database health checks + CODEOWNERS enforcement"
+}

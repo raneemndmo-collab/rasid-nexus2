@@ -1,0 +1,6077 @@
+{
+  "summary": {
+    "generated_at": "2026-03-01T07:33:41.998Z",
+    "model": "gpt-4.1-nano",
+    "total_prompts": 600,
+    "by_interface": {
+      "text_generation": {
+        "total": 100,
+        "successful": 100,
+        "failed": 0,
+        "success_rate": 1,
+        "latency_p50": 1011,
+        "latency_p95": 1523,
+        "avg_tokens": 65.3,
+        "total_cost": 0.06529,
+        "avg_quality": 0.9
+      },
+      "classification": {
+        "total": 100,
+        "successful": 100,
+        "failed": 0,
+        "success_rate": 1,
+        "latency_p50": 804,
+        "latency_p95": 1389,
+        "avg_tokens": 30.9,
+        "total_cost": 0.03085,
+        "avg_quality": 1
+      },
+      "summarization": {
+        "total": 100,
+        "successful": 100,
+        "failed": 0,
+        "success_rate": 1,
+        "latency_p50": 940,
+        "latency_p95": 1875,
+        "avg_tokens": 78.5,
+        "total_cost": 0.07847,
+        "avg_quality": 0.6
+      },
+      "vision_analysis": {
+        "total": 100,
+        "successful": 100,
+        "failed": 0,
+        "success_rate": 1,
+        "latency_p50": 996,
+        "latency_p95": 1918,
+        "avg_tokens": 80.1,
+        "total_cost": 0.08006,
+        "avg_quality": 0.85
+      },
+      "speech_synthesis": {
+        "total": 100,
+        "successful": 100,
+        "failed": 0,
+        "success_rate": 1,
+        "latency_p50": 1,
+        "latency_p95": 1,
+        "avg_tokens": 25.2,
+        "total_cost": 0.03783,
+        "avg_quality": 0.9
+      },
+      "embedding": {
+        "total": 100,
+        "successful": 100,
+        "failed": 0,
+        "success_rate": 1,
+        "latency_p50": 22.2,
+        "latency_p95": 130.4,
+        "avg_tokens": 5,
+        "total_cost": 0.0005,
+        "avg_quality": 0.95
+      }
+    }
+  },
+  "records": [
+    {
+      "interface": "text_generation",
+      "promptIndex": 0,
+      "success": true,
+      "latencyMs": 2138,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 234
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 1,
+      "success": true,
+      "latencyMs": 2075,
+      "tokens": 62,
+      "cost": 0.00062,
+      "qualityScore": 0.9,
+      "responseLength": 233
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 2,
+      "success": true,
+      "latencyMs": 885,
+      "tokens": 65,
+      "cost": 0.0006500000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 249
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 3,
+      "success": true,
+      "latencyMs": 1012,
+      "tokens": 62,
+      "cost": 0.00062,
+      "qualityScore": 0.9,
+      "responseLength": 220
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 4,
+      "success": true,
+      "latencyMs": 870,
+      "tokens": 65,
+      "cost": 0.0006500000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 236
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 5,
+      "success": true,
+      "latencyMs": 815,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 254
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 6,
+      "success": true,
+      "latencyMs": 864,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 278
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 7,
+      "success": true,
+      "latencyMs": 854,
+      "tokens": 55,
+      "cost": 0.00055,
+      "qualityScore": 0.9,
+      "responseLength": 194
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 8,
+      "success": true,
+      "latencyMs": 820,
+      "tokens": 65,
+      "cost": 0.0006500000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 213
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 9,
+      "success": true,
+      "latencyMs": 998,
+      "tokens": 68,
+      "cost": 0.00068,
+      "qualityScore": 0.9,
+      "responseLength": 249
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 10,
+      "success": true,
+      "latencyMs": 892,
+      "tokens": 57,
+      "cost": 0.0005700000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 193
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 11,
+      "success": true,
+      "latencyMs": 1004,
+      "tokens": 68,
+      "cost": 0.00068,
+      "qualityScore": 0.9,
+      "responseLength": 218
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 12,
+      "success": true,
+      "latencyMs": 859,
+      "tokens": 61,
+      "cost": 0.0006100000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 221
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 13,
+      "success": true,
+      "latencyMs": 762,
+      "tokens": 54,
+      "cost": 0.00054,
+      "qualityScore": 0.9,
+      "responseLength": 177
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 14,
+      "success": true,
+      "latencyMs": 746,
+      "tokens": 53,
+      "cost": 0.0005300000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 168
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 15,
+      "success": true,
+      "latencyMs": 811,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 231
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 16,
+      "success": true,
+      "latencyMs": 852,
+      "tokens": 65,
+      "cost": 0.0006500000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 220
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 17,
+      "success": true,
+      "latencyMs": 809,
+      "tokens": 52,
+      "cost": 0.0005200000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 157
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 18,
+      "success": true,
+      "latencyMs": 818,
+      "tokens": 64,
+      "cost": 0.00064,
+      "qualityScore": 0.9,
+      "responseLength": 265
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 19,
+      "success": true,
+      "latencyMs": 755,
+      "tokens": 54,
+      "cost": 0.00054,
+      "qualityScore": 0.9,
+      "responseLength": 177
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 20,
+      "success": true,
+      "latencyMs": 960,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.9,
+      "responseLength": 258
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 21,
+      "success": true,
+      "latencyMs": 955,
+      "tokens": 64,
+      "cost": 0.00064,
+      "qualityScore": 0.9,
+      "responseLength": 255
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 22,
+      "success": true,
+      "latencyMs": 980,
+      "tokens": 65,
+      "cost": 0.0006500000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 234
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 23,
+      "success": true,
+      "latencyMs": 1290,
+      "tokens": 67,
+      "cost": 0.00067,
+      "qualityScore": 0.9,
+      "responseLength": 266
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 24,
+      "success": true,
+      "latencyMs": 867,
+      "tokens": 57,
+      "cost": 0.0005700000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 203
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 25,
+      "success": true,
+      "latencyMs": 957,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 246
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 26,
+      "success": true,
+      "latencyMs": 789,
+      "tokens": 63,
+      "cost": 0.00063,
+      "qualityScore": 0.9,
+      "responseLength": 239
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 27,
+      "success": true,
+      "latencyMs": 768,
+      "tokens": 65,
+      "cost": 0.0006500000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 272
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 28,
+      "success": true,
+      "latencyMs": 877,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 209
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 29,
+      "success": true,
+      "latencyMs": 906,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.9,
+      "responseLength": 302
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 30,
+      "success": true,
+      "latencyMs": 1283,
+      "tokens": 67,
+      "cost": 0.00067,
+      "qualityScore": 0.9,
+      "responseLength": 252
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 31,
+      "success": true,
+      "latencyMs": 835,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 241
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 32,
+      "success": true,
+      "latencyMs": 901,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 319
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 33,
+      "success": true,
+      "latencyMs": 870,
+      "tokens": 56,
+      "cost": 0.0005600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 191
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 34,
+      "success": true,
+      "latencyMs": 730,
+      "tokens": 50,
+      "cost": 0.0005,
+      "qualityScore": 0.9,
+      "responseLength": 156
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 35,
+      "success": true,
+      "latencyMs": 1523,
+      "tokens": 63,
+      "cost": 0.00063,
+      "qualityScore": 0.9,
+      "responseLength": 231
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 36,
+      "success": true,
+      "latencyMs": 830,
+      "tokens": 73,
+      "cost": 0.0007300000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 303
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 37,
+      "success": true,
+      "latencyMs": 869,
+      "tokens": 61,
+      "cost": 0.0006100000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 215
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 38,
+      "success": true,
+      "latencyMs": 1486,
+      "tokens": 64,
+      "cost": 0.00064,
+      "qualityScore": 0.9,
+      "responseLength": 251
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 39,
+      "success": true,
+      "latencyMs": 1007,
+      "tokens": 56,
+      "cost": 0.0005600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 194
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 40,
+      "success": true,
+      "latencyMs": 1514,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 235
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 41,
+      "success": true,
+      "latencyMs": 1048,
+      "tokens": 63,
+      "cost": 0.00063,
+      "qualityScore": 0.9,
+      "responseLength": 245
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 42,
+      "success": true,
+      "latencyMs": 1124,
+      "tokens": 67,
+      "cost": 0.00067,
+      "qualityScore": 0.9,
+      "responseLength": 250
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 43,
+      "success": true,
+      "latencyMs": 2544,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 272
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 44,
+      "success": true,
+      "latencyMs": 966,
+      "tokens": 67,
+      "cost": 0.00067,
+      "qualityScore": 0.9,
+      "responseLength": 274
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 45,
+      "success": true,
+      "latencyMs": 1308,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 246
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 46,
+      "success": true,
+      "latencyMs": 950,
+      "tokens": 69,
+      "cost": 0.0006900000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 282
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 47,
+      "success": true,
+      "latencyMs": 959,
+      "tokens": 58,
+      "cost": 0.00058,
+      "qualityScore": 0.9,
+      "responseLength": 195
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 48,
+      "success": true,
+      "latencyMs": 1312,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 280
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 49,
+      "success": true,
+      "latencyMs": 1030,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 297
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 50,
+      "success": true,
+      "latencyMs": 1051,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 289
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 51,
+      "success": true,
+      "latencyMs": 982,
+      "tokens": 68,
+      "cost": 0.00068,
+      "qualityScore": 0.9,
+      "responseLength": 228
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 52,
+      "success": true,
+      "latencyMs": 986,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 314
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 53,
+      "success": true,
+      "latencyMs": 1229,
+      "tokens": 59,
+      "cost": 0.00059,
+      "qualityScore": 0.9,
+      "responseLength": 236
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 54,
+      "success": true,
+      "latencyMs": 1051,
+      "tokens": 62,
+      "cost": 0.00062,
+      "qualityScore": 0.9,
+      "responseLength": 219
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 55,
+      "success": true,
+      "latencyMs": 1429,
+      "tokens": 67,
+      "cost": 0.00067,
+      "qualityScore": 0.9,
+      "responseLength": 259
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 56,
+      "success": true,
+      "latencyMs": 1153,
+      "tokens": 72,
+      "cost": 0.00072,
+      "qualityScore": 0.9,
+      "responseLength": 290
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 57,
+      "success": true,
+      "latencyMs": 1036,
+      "tokens": 69,
+      "cost": 0.0006900000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 254
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 58,
+      "success": true,
+      "latencyMs": 1111,
+      "tokens": 63,
+      "cost": 0.00063,
+      "qualityScore": 0.9,
+      "responseLength": 248
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 59,
+      "success": true,
+      "latencyMs": 1503,
+      "tokens": 59,
+      "cost": 0.00059,
+      "qualityScore": 0.9,
+      "responseLength": 217
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 60,
+      "success": true,
+      "latencyMs": 1124,
+      "tokens": 77,
+      "cost": 0.0007700000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 263
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 61,
+      "success": true,
+      "latencyMs": 984,
+      "tokens": 64,
+      "cost": 0.00064,
+      "qualityScore": 0.9,
+      "responseLength": 248
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 62,
+      "success": true,
+      "latencyMs": 1466,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 239
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 63,
+      "success": true,
+      "latencyMs": 1059,
+      "tokens": 68,
+      "cost": 0.00068,
+      "qualityScore": 0.9,
+      "responseLength": 268
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 64,
+      "success": true,
+      "latencyMs": 1152,
+      "tokens": 55,
+      "cost": 0.00055,
+      "qualityScore": 0.9,
+      "responseLength": 199
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 65,
+      "success": true,
+      "latencyMs": 1011,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 228
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 66,
+      "success": true,
+      "latencyMs": 1055,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 271
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 67,
+      "success": true,
+      "latencyMs": 982,
+      "tokens": 60,
+      "cost": 0.0006000000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 215
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 68,
+      "success": true,
+      "latencyMs": 1129,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 274
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 69,
+      "success": true,
+      "latencyMs": 979,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 263
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 70,
+      "success": true,
+      "latencyMs": 1309,
+      "tokens": 68,
+      "cost": 0.00068,
+      "qualityScore": 0.9,
+      "responseLength": 249
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 71,
+      "success": true,
+      "latencyMs": 1297,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 233
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 72,
+      "success": true,
+      "latencyMs": 1186,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 343
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 73,
+      "success": true,
+      "latencyMs": 1257,
+      "tokens": 69,
+      "cost": 0.0006900000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 282
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 74,
+      "success": true,
+      "latencyMs": 1486,
+      "tokens": 60,
+      "cost": 0.0006000000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 216
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 75,
+      "success": true,
+      "latencyMs": 3146,
+      "tokens": 51,
+      "cost": 0.00051,
+      "qualityScore": 0.9,
+      "responseLength": 153
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 76,
+      "success": true,
+      "latencyMs": 1035,
+      "tokens": 65,
+      "cost": 0.0006500000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 259
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 77,
+      "success": true,
+      "latencyMs": 920,
+      "tokens": 68,
+      "cost": 0.00068,
+      "qualityScore": 0.9,
+      "responseLength": 237
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 78,
+      "success": true,
+      "latencyMs": 1248,
+      "tokens": 68,
+      "cost": 0.00068,
+      "qualityScore": 0.9,
+      "responseLength": 269
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 79,
+      "success": true,
+      "latencyMs": 1119,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 270
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 80,
+      "success": true,
+      "latencyMs": 1154,
+      "tokens": 77,
+      "cost": 0.0007700000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 256
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 81,
+      "success": true,
+      "latencyMs": 1012,
+      "tokens": 65,
+      "cost": 0.0006500000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 253
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 82,
+      "success": true,
+      "latencyMs": 1035,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 253
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 83,
+      "success": true,
+      "latencyMs": 1014,
+      "tokens": 61,
+      "cost": 0.0006100000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 231
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 84,
+      "success": true,
+      "latencyMs": 1107,
+      "tokens": 62,
+      "cost": 0.00062,
+      "qualityScore": 0.9,
+      "responseLength": 246
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 85,
+      "success": true,
+      "latencyMs": 1046,
+      "tokens": 65,
+      "cost": 0.0006500000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 242
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 86,
+      "success": true,
+      "latencyMs": 1146,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 316
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 87,
+      "success": true,
+      "latencyMs": 1029,
+      "tokens": 64,
+      "cost": 0.00064,
+      "qualityScore": 0.9,
+      "responseLength": 251
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 88,
+      "success": true,
+      "latencyMs": 1170,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 281
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 89,
+      "success": true,
+      "latencyMs": 1158,
+      "tokens": 73,
+      "cost": 0.0007300000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 289
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 90,
+      "success": true,
+      "latencyMs": 1059,
+      "tokens": 64,
+      "cost": 0.00064,
+      "qualityScore": 0.9,
+      "responseLength": 226
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 91,
+      "success": true,
+      "latencyMs": 1052,
+      "tokens": 68,
+      "cost": 0.00068,
+      "qualityScore": 0.9,
+      "responseLength": 218
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 92,
+      "success": true,
+      "latencyMs": 1002,
+      "tokens": 69,
+      "cost": 0.0006900000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 279
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 93,
+      "success": true,
+      "latencyMs": 714,
+      "tokens": 68,
+      "cost": 0.00068,
+      "qualityScore": 0.9,
+      "responseLength": 266
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 94,
+      "success": true,
+      "latencyMs": 656,
+      "tokens": 51,
+      "cost": 0.00051,
+      "qualityScore": 0.9,
+      "responseLength": 150
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 95,
+      "success": true,
+      "latencyMs": 667,
+      "tokens": 65,
+      "cost": 0.0006500000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 240
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 96,
+      "success": true,
+      "latencyMs": 736,
+      "tokens": 57,
+      "cost": 0.0005700000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 205
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 97,
+      "success": true,
+      "latencyMs": 785,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 236
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 98,
+      "success": true,
+      "latencyMs": 780,
+      "tokens": 61,
+      "cost": 0.0006100000000000001,
+      "qualityScore": 0.9,
+      "responseLength": 229
+    },
+    {
+      "interface": "text_generation",
+      "promptIndex": 99,
+      "success": true,
+      "latencyMs": 748,
+      "tokens": 54,
+      "cost": 0.00054,
+      "qualityScore": 0.9,
+      "responseLength": 188
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 0,
+      "success": true,
+      "latencyMs": 1757,
+      "tokens": 33,
+      "cost": 0.00033000000000000005,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 1,
+      "success": true,
+      "latencyMs": 1730,
+      "tokens": 32,
+      "cost": 0.00032,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 2,
+      "success": true,
+      "latencyMs": 653,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 3,
+      "success": true,
+      "latencyMs": 634,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 4,
+      "success": true,
+      "latencyMs": 605,
+      "tokens": 32,
+      "cost": 0.00032,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 5,
+      "success": true,
+      "latencyMs": 591,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 6,
+      "success": true,
+      "latencyMs": 676,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 7,
+      "success": true,
+      "latencyMs": 781,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 8,
+      "success": true,
+      "latencyMs": 670,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 9,
+      "success": true,
+      "latencyMs": 595,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 10,
+      "success": true,
+      "latencyMs": 679,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 11,
+      "success": true,
+      "latencyMs": 776,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 12,
+      "success": true,
+      "latencyMs": 698,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 13,
+      "success": true,
+      "latencyMs": 637,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 14,
+      "success": true,
+      "latencyMs": 677,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 15,
+      "success": true,
+      "latencyMs": 763,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 16,
+      "success": true,
+      "latencyMs": 686,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 17,
+      "success": true,
+      "latencyMs": 914,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 18,
+      "success": true,
+      "latencyMs": 578,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 19,
+      "success": true,
+      "latencyMs": 1066,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 20,
+      "success": true,
+      "latencyMs": 952,
+      "tokens": 33,
+      "cost": 0.00033000000000000005,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 21,
+      "success": true,
+      "latencyMs": 794,
+      "tokens": 32,
+      "cost": 0.00032,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 22,
+      "success": true,
+      "latencyMs": 862,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 23,
+      "success": true,
+      "latencyMs": 1090,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 24,
+      "success": true,
+      "latencyMs": 799,
+      "tokens": 32,
+      "cost": 0.00032,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 25,
+      "success": true,
+      "latencyMs": 1064,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 26,
+      "success": true,
+      "latencyMs": 1083,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 27,
+      "success": true,
+      "latencyMs": 803,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 28,
+      "success": true,
+      "latencyMs": 794,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 29,
+      "success": true,
+      "latencyMs": 814,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 30,
+      "success": true,
+      "latencyMs": 857,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 31,
+      "success": true,
+      "latencyMs": 799,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 32,
+      "success": true,
+      "latencyMs": 857,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 33,
+      "success": true,
+      "latencyMs": 1003,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 34,
+      "success": true,
+      "latencyMs": 796,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 35,
+      "success": true,
+      "latencyMs": 780,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 36,
+      "success": true,
+      "latencyMs": 1063,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 37,
+      "success": true,
+      "latencyMs": 782,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 38,
+      "success": true,
+      "latencyMs": 797,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 39,
+      "success": true,
+      "latencyMs": 841,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 40,
+      "success": true,
+      "latencyMs": 1084,
+      "tokens": 33,
+      "cost": 0.00033000000000000005,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 41,
+      "success": true,
+      "latencyMs": 822,
+      "tokens": 32,
+      "cost": 0.00032,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 42,
+      "success": true,
+      "latencyMs": 796,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 43,
+      "success": true,
+      "latencyMs": 1085,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 44,
+      "success": true,
+      "latencyMs": 877,
+      "tokens": 32,
+      "cost": 0.00032,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 45,
+      "success": true,
+      "latencyMs": 813,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 46,
+      "success": true,
+      "latencyMs": 792,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 47,
+      "success": true,
+      "latencyMs": 806,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 48,
+      "success": true,
+      "latencyMs": 792,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 49,
+      "success": true,
+      "latencyMs": 772,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 50,
+      "success": true,
+      "latencyMs": 1389,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 51,
+      "success": true,
+      "latencyMs": 810,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 52,
+      "success": true,
+      "latencyMs": 812,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 53,
+      "success": true,
+      "latencyMs": 805,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 54,
+      "success": true,
+      "latencyMs": 1065,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 55,
+      "success": true,
+      "latencyMs": 1063,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 56,
+      "success": true,
+      "latencyMs": 1095,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 57,
+      "success": true,
+      "latencyMs": 791,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 58,
+      "success": true,
+      "latencyMs": 807,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 59,
+      "success": true,
+      "latencyMs": 784,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 60,
+      "success": true,
+      "latencyMs": 788,
+      "tokens": 33,
+      "cost": 0.00033000000000000005,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 61,
+      "success": true,
+      "latencyMs": 917,
+      "tokens": 32,
+      "cost": 0.00032,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 62,
+      "success": true,
+      "latencyMs": 810,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 63,
+      "success": true,
+      "latencyMs": 1091,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 64,
+      "success": true,
+      "latencyMs": 830,
+      "tokens": 32,
+      "cost": 0.00032,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 65,
+      "success": true,
+      "latencyMs": 1340,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 66,
+      "success": true,
+      "latencyMs": 781,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 67,
+      "success": true,
+      "latencyMs": 767,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 68,
+      "success": true,
+      "latencyMs": 864,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 69,
+      "success": true,
+      "latencyMs": 786,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 70,
+      "success": true,
+      "latencyMs": 1087,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 71,
+      "success": true,
+      "latencyMs": 1118,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 72,
+      "success": true,
+      "latencyMs": 1081,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 73,
+      "success": true,
+      "latencyMs": 1072,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 74,
+      "success": true,
+      "latencyMs": 1004,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 75,
+      "success": true,
+      "latencyMs": 1098,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 76,
+      "success": true,
+      "latencyMs": 829,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 77,
+      "success": true,
+      "latencyMs": 860,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 78,
+      "success": true,
+      "latencyMs": 804,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 79,
+      "success": true,
+      "latencyMs": 845,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 80,
+      "success": true,
+      "latencyMs": 607,
+      "tokens": 33,
+      "cost": 0.00033000000000000005,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 81,
+      "success": true,
+      "latencyMs": 694,
+      "tokens": 32,
+      "cost": 0.00032,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 82,
+      "success": true,
+      "latencyMs": 669,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 83,
+      "success": true,
+      "latencyMs": 646,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 84,
+      "success": true,
+      "latencyMs": 664,
+      "tokens": 32,
+      "cost": 0.00032,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 85,
+      "success": true,
+      "latencyMs": 669,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 86,
+      "success": true,
+      "latencyMs": 703,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 87,
+      "success": true,
+      "latencyMs": 743,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 88,
+      "success": true,
+      "latencyMs": 677,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 89,
+      "success": true,
+      "latencyMs": 615,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 90,
+      "success": true,
+      "latencyMs": 1610,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 91,
+      "success": true,
+      "latencyMs": 1001,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 92,
+      "success": true,
+      "latencyMs": 751,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 93,
+      "success": true,
+      "latencyMs": 663,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 94,
+      "success": true,
+      "latencyMs": 677,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 95,
+      "success": true,
+      "latencyMs": 676,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 96,
+      "success": true,
+      "latencyMs": 1557,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 97,
+      "success": true,
+      "latencyMs": 1289,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 7
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 98,
+      "success": true,
+      "latencyMs": 665,
+      "tokens": 30,
+      "cost": 0.00030000000000000003,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "classification",
+      "promptIndex": 99,
+      "success": true,
+      "latencyMs": 1280,
+      "tokens": 31,
+      "cost": 0.00031,
+      "qualityScore": 1,
+      "responseLength": 8
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 0,
+      "success": true,
+      "latencyMs": 2147,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.6,
+      "responseLength": 142
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 1,
+      "success": true,
+      "latencyMs": 2201,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 2,
+      "success": true,
+      "latencyMs": 972,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 162
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 3,
+      "success": true,
+      "latencyMs": 976,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 148
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 4,
+      "success": true,
+      "latencyMs": 928,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 129
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 5,
+      "success": true,
+      "latencyMs": 1286,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 147
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 6,
+      "success": true,
+      "latencyMs": 1438,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 7,
+      "success": true,
+      "latencyMs": 991,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 8,
+      "success": true,
+      "latencyMs": 2146,
+      "tokens": 84,
+      "cost": 0.00084,
+      "qualityScore": 0.6,
+      "responseLength": 127
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 9,
+      "success": true,
+      "latencyMs": 1190,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 129
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 10,
+      "success": true,
+      "latencyMs": 1009,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 147
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 11,
+      "success": true,
+      "latencyMs": 1430,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 12,
+      "success": true,
+      "latencyMs": 1058,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 162
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 13,
+      "success": true,
+      "latencyMs": 1111,
+      "tokens": 87,
+      "cost": 0.0008700000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 139
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 14,
+      "success": true,
+      "latencyMs": 1393,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 15,
+      "success": true,
+      "latencyMs": 1256,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 147
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 16,
+      "success": true,
+      "latencyMs": 1004,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 179
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 17,
+      "success": true,
+      "latencyMs": 1032,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 18,
+      "success": true,
+      "latencyMs": 1029,
+      "tokens": 87,
+      "cost": 0.0008700000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 139
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 19,
+      "success": true,
+      "latencyMs": 998,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 20,
+      "success": true,
+      "latencyMs": 807,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.6,
+      "responseLength": 142
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 21,
+      "success": true,
+      "latencyMs": 725,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 22,
+      "success": true,
+      "latencyMs": 1298,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 23,
+      "success": true,
+      "latencyMs": 919,
+      "tokens": 86,
+      "cost": 0.0008600000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 136
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 24,
+      "success": true,
+      "latencyMs": 893,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 121
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 25,
+      "success": true,
+      "latencyMs": 989,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 147
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 26,
+      "success": true,
+      "latencyMs": 940,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 27,
+      "success": true,
+      "latencyMs": 1172,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 162
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 28,
+      "success": true,
+      "latencyMs": 767,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 148
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 29,
+      "success": true,
+      "latencyMs": 699,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 129
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 30,
+      "success": true,
+      "latencyMs": 3152,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 147
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 31,
+      "success": true,
+      "latencyMs": 976,
+      "tokens": 77,
+      "cost": 0.0007700000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 173
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 32,
+      "success": true,
+      "latencyMs": 887,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 33,
+      "success": true,
+      "latencyMs": 968,
+      "tokens": 91,
+      "cost": 0.0009100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 156
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 34,
+      "success": true,
+      "latencyMs": 899,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 35,
+      "success": true,
+      "latencyMs": 1444,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 150
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 36,
+      "success": true,
+      "latencyMs": 1001,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 37,
+      "success": true,
+      "latencyMs": 1248,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 38,
+      "success": true,
+      "latencyMs": 1201,
+      "tokens": 91,
+      "cost": 0.0009100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 156
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 39,
+      "success": true,
+      "latencyMs": 728,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 40,
+      "success": true,
+      "latencyMs": 901,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.6,
+      "responseLength": 142
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 41,
+      "success": true,
+      "latencyMs": 1186,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 42,
+      "success": true,
+      "latencyMs": 959,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 162
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 43,
+      "success": true,
+      "latencyMs": 919,
+      "tokens": 87,
+      "cost": 0.0008700000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 139
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 44,
+      "success": true,
+      "latencyMs": 913,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 129
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 45,
+      "success": true,
+      "latencyMs": 1776,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.6,
+      "responseLength": 142
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 46,
+      "success": true,
+      "latencyMs": 959,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 47,
+      "success": true,
+      "latencyMs": 1035,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 48,
+      "success": true,
+      "latencyMs": 979,
+      "tokens": 90,
+      "cost": 0.0009000000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 153
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 49,
+      "success": true,
+      "latencyMs": 887,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 50,
+      "success": true,
+      "latencyMs": 1645,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 147
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 51,
+      "success": true,
+      "latencyMs": 1276,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 52,
+      "success": true,
+      "latencyMs": 963,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 53,
+      "success": true,
+      "latencyMs": 1041,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 148
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 54,
+      "success": true,
+      "latencyMs": 947,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 55,
+      "success": true,
+      "latencyMs": 984,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 147
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 56,
+      "success": true,
+      "latencyMs": 1133,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 57,
+      "success": true,
+      "latencyMs": 873,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 162
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 58,
+      "success": true,
+      "latencyMs": 780,
+      "tokens": 86,
+      "cost": 0.0008600000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 136
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 59,
+      "success": true,
+      "latencyMs": 666,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 60,
+      "success": true,
+      "latencyMs": 764,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.6,
+      "responseLength": 142
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 61,
+      "success": true,
+      "latencyMs": 800,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 62,
+      "success": true,
+      "latencyMs": 800,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 63,
+      "success": true,
+      "latencyMs": 867,
+      "tokens": 91,
+      "cost": 0.0009100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 156
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 64,
+      "success": true,
+      "latencyMs": 756,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 129
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 65,
+      "success": true,
+      "latencyMs": 787,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.6,
+      "responseLength": 142
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 66,
+      "success": true,
+      "latencyMs": 710,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 67,
+      "success": true,
+      "latencyMs": 885,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 162
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 68,
+      "success": true,
+      "latencyMs": 819,
+      "tokens": 91,
+      "cost": 0.0009100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 156
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 69,
+      "success": true,
+      "latencyMs": 885,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 70,
+      "success": true,
+      "latencyMs": 983,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 147
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 71,
+      "success": true,
+      "latencyMs": 909,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 72,
+      "success": true,
+      "latencyMs": 781,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 162
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 73,
+      "success": true,
+      "latencyMs": 859,
+      "tokens": 91,
+      "cost": 0.0009100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 156
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 74,
+      "success": true,
+      "latencyMs": 766,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 75,
+      "success": true,
+      "latencyMs": 789,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.6,
+      "responseLength": 142
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 76,
+      "success": true,
+      "latencyMs": 777,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 77,
+      "success": true,
+      "latencyMs": 774,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 162
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 78,
+      "success": true,
+      "latencyMs": 837,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 148
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 79,
+      "success": true,
+      "latencyMs": 827,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 80,
+      "success": true,
+      "latencyMs": 883,
+      "tokens": 79,
+      "cost": 0.00079,
+      "qualityScore": 0.6,
+      "responseLength": 131
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 81,
+      "success": true,
+      "latencyMs": 860,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 173
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 82,
+      "success": true,
+      "latencyMs": 766,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 83,
+      "success": true,
+      "latencyMs": 865,
+      "tokens": 91,
+      "cost": 0.0009100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 156
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 84,
+      "success": true,
+      "latencyMs": 773,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 85,
+      "success": true,
+      "latencyMs": 758,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 147
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 86,
+      "success": true,
+      "latencyMs": 803,
+      "tokens": 76,
+      "cost": 0.00076,
+      "qualityScore": 0.6,
+      "responseLength": 167
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 87,
+      "success": true,
+      "latencyMs": 795,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 162
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 88,
+      "success": true,
+      "latencyMs": 918,
+      "tokens": 91,
+      "cost": 0.0009100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 156
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 89,
+      "success": true,
+      "latencyMs": 904,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 90,
+      "success": true,
+      "latencyMs": 910,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.6,
+      "responseLength": 137
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 91,
+      "success": true,
+      "latencyMs": 1201,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 92,
+      "success": true,
+      "latencyMs": 1074,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.6,
+      "responseLength": 174
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 93,
+      "success": true,
+      "latencyMs": 969,
+      "tokens": 87,
+      "cost": 0.0008700000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 139
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 94,
+      "success": true,
+      "latencyMs": 922,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.6,
+      "responseLength": 125
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 95,
+      "success": true,
+      "latencyMs": 983,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.6,
+      "responseLength": 142
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 96,
+      "success": true,
+      "latencyMs": 1875,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 177
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 97,
+      "success": true,
+      "latencyMs": 916,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 162
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 98,
+      "success": true,
+      "latencyMs": 974,
+      "tokens": 91,
+      "cost": 0.0009100000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 156
+    },
+    {
+      "interface": "summarization",
+      "promptIndex": 99,
+      "success": true,
+      "latencyMs": 792,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.6,
+      "responseLength": 129
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 0,
+      "success": true,
+      "latencyMs": 1892,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 306
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 1,
+      "success": true,
+      "latencyMs": 2899,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.85,
+      "responseLength": 299
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 2,
+      "success": true,
+      "latencyMs": 977,
+      "tokens": 81,
+      "cost": 0.0008100000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 258
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 3,
+      "success": true,
+      "latencyMs": 1232,
+      "tokens": 85,
+      "cost": 0.0008500000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 293
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 4,
+      "success": true,
+      "latencyMs": 724,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.85,
+      "responseLength": 246
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 5,
+      "success": true,
+      "latencyMs": 784,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 278
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 6,
+      "success": true,
+      "latencyMs": 706,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 260
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 7,
+      "success": true,
+      "latencyMs": 771,
+      "tokens": 66,
+      "cost": 0.0006600000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 224
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 8,
+      "success": true,
+      "latencyMs": 822,
+      "tokens": 82,
+      "cost": 0.0008200000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 276
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 9,
+      "success": true,
+      "latencyMs": 887,
+      "tokens": 77,
+      "cost": 0.0007700000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 245
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 10,
+      "success": true,
+      "latencyMs": 716,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.85,
+      "responseLength": 265
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 11,
+      "success": true,
+      "latencyMs": 902,
+      "tokens": 79,
+      "cost": 0.00079,
+      "qualityScore": 0.85,
+      "responseLength": 283
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 12,
+      "success": true,
+      "latencyMs": 772,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 302
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 13,
+      "success": true,
+      "latencyMs": 843,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 323
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 14,
+      "success": true,
+      "latencyMs": 2186,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 279
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 15,
+      "success": true,
+      "latencyMs": 844,
+      "tokens": 88,
+      "cost": 0.00088,
+      "qualityScore": 0.85,
+      "responseLength": 313
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 16,
+      "success": true,
+      "latencyMs": 746,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 257
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 17,
+      "success": true,
+      "latencyMs": 847,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.85,
+      "responseLength": 317
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 18,
+      "success": true,
+      "latencyMs": 734,
+      "tokens": 79,
+      "cost": 0.00079,
+      "qualityScore": 0.85,
+      "responseLength": 288
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 19,
+      "success": true,
+      "latencyMs": 738,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 238
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 20,
+      "success": true,
+      "latencyMs": 1474,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.85,
+      "responseLength": 251
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 21,
+      "success": true,
+      "latencyMs": 741,
+      "tokens": 63,
+      "cost": 0.00063,
+      "qualityScore": 0.85,
+      "responseLength": 196
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 22,
+      "success": true,
+      "latencyMs": 816,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 327
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 23,
+      "success": true,
+      "latencyMs": 3406,
+      "tokens": 86,
+      "cost": 0.0008600000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 304
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 24,
+      "success": true,
+      "latencyMs": 965,
+      "tokens": 72,
+      "cost": 0.00072,
+      "qualityScore": 0.85,
+      "responseLength": 229
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 25,
+      "success": true,
+      "latencyMs": 997,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 350
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 26,
+      "success": true,
+      "latencyMs": 1245,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.85,
+      "responseLength": 253
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 27,
+      "success": true,
+      "latencyMs": 1026,
+      "tokens": 79,
+      "cost": 0.00079,
+      "qualityScore": 0.85,
+      "responseLength": 301
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 28,
+      "success": true,
+      "latencyMs": 1047,
+      "tokens": 88,
+      "cost": 0.00088,
+      "qualityScore": 0.85,
+      "responseLength": 330
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 29,
+      "success": true,
+      "latencyMs": 1054,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 238
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 30,
+      "success": true,
+      "latencyMs": 991,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 249
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 31,
+      "success": true,
+      "latencyMs": 1058,
+      "tokens": 83,
+      "cost": 0.0008300000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 318
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 32,
+      "success": true,
+      "latencyMs": 986,
+      "tokens": 87,
+      "cost": 0.0008700000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 266
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 33,
+      "success": true,
+      "latencyMs": 1439,
+      "tokens": 88,
+      "cost": 0.00088,
+      "qualityScore": 0.85,
+      "responseLength": 327
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 34,
+      "success": true,
+      "latencyMs": 1097,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 255
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 35,
+      "success": true,
+      "latencyMs": 1038,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 348
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 36,
+      "success": true,
+      "latencyMs": 1834,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.85,
+      "responseLength": 279
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 37,
+      "success": true,
+      "latencyMs": 1378,
+      "tokens": 88,
+      "cost": 0.00088,
+      "qualityScore": 0.85,
+      "responseLength": 351
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 38,
+      "success": true,
+      "latencyMs": 1019,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 335
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 39,
+      "success": true,
+      "latencyMs": 996,
+      "tokens": 77,
+      "cost": 0.0007700000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 241
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 40,
+      "success": true,
+      "latencyMs": 1009,
+      "tokens": 77,
+      "cost": 0.0007700000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 269
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 41,
+      "success": true,
+      "latencyMs": 1288,
+      "tokens": 84,
+      "cost": 0.00084,
+      "qualityScore": 0.85,
+      "responseLength": 321
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 42,
+      "success": true,
+      "latencyMs": 1359,
+      "tokens": 84,
+      "cost": 0.00084,
+      "qualityScore": 0.85,
+      "responseLength": 274
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 43,
+      "success": true,
+      "latencyMs": 1560,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 247
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 44,
+      "success": true,
+      "latencyMs": 873,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 242
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 45,
+      "success": true,
+      "latencyMs": 940,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 332
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 46,
+      "success": true,
+      "latencyMs": 900,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.85,
+      "responseLength": 276
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 47,
+      "success": true,
+      "latencyMs": 1030,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 389
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 48,
+      "success": true,
+      "latencyMs": 1028,
+      "tokens": 86,
+      "cost": 0.0008600000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 316
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 49,
+      "success": true,
+      "latencyMs": 1047,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 238
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 50,
+      "success": true,
+      "latencyMs": 985,
+      "tokens": 82,
+      "cost": 0.0008200000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 304
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 51,
+      "success": true,
+      "latencyMs": 946,
+      "tokens": 64,
+      "cost": 0.00064,
+      "qualityScore": 0.85,
+      "responseLength": 193
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 52,
+      "success": true,
+      "latencyMs": 963,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.85,
+      "responseLength": 268
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 53,
+      "success": true,
+      "latencyMs": 1036,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 307
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 54,
+      "success": true,
+      "latencyMs": 996,
+      "tokens": 69,
+      "cost": 0.0006900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 214
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 55,
+      "success": true,
+      "latencyMs": 1238,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.85,
+      "responseLength": 277
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 56,
+      "success": true,
+      "latencyMs": 1167,
+      "tokens": 76,
+      "cost": 0.00076,
+      "qualityScore": 0.85,
+      "responseLength": 282
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 57,
+      "success": true,
+      "latencyMs": 995,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 291
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 58,
+      "success": true,
+      "latencyMs": 1293,
+      "tokens": 85,
+      "cost": 0.0008500000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 316
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 59,
+      "success": true,
+      "latencyMs": 989,
+      "tokens": 85,
+      "cost": 0.0008500000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 283
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 60,
+      "success": true,
+      "latencyMs": 698,
+      "tokens": 69,
+      "cost": 0.0006900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 245
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 61,
+      "success": true,
+      "latencyMs": 754,
+      "tokens": 83,
+      "cost": 0.0008300000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 313
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 62,
+      "success": true,
+      "latencyMs": 858,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.85,
+      "responseLength": 268
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 63,
+      "success": true,
+      "latencyMs": 940,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 341
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 64,
+      "success": true,
+      "latencyMs": 700,
+      "tokens": 62,
+      "cost": 0.00062,
+      "qualityScore": 0.85,
+      "responseLength": 190
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 65,
+      "success": true,
+      "latencyMs": 864,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 334
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 66,
+      "success": true,
+      "latencyMs": 808,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.85,
+      "responseLength": 279
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 67,
+      "success": true,
+      "latencyMs": 908,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.85,
+      "responseLength": 312
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 68,
+      "success": true,
+      "latencyMs": 1116,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 347
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 69,
+      "success": true,
+      "latencyMs": 1036,
+      "tokens": 84,
+      "cost": 0.00084,
+      "qualityScore": 0.85,
+      "responseLength": 282
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 70,
+      "success": true,
+      "latencyMs": 1345,
+      "tokens": 88,
+      "cost": 0.00088,
+      "qualityScore": 0.85,
+      "responseLength": 336
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 71,
+      "success": true,
+      "latencyMs": 1918,
+      "tokens": 68,
+      "cost": 0.00068,
+      "qualityScore": 0.85,
+      "responseLength": 196
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 72,
+      "success": true,
+      "latencyMs": 1065,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 311
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 73,
+      "success": true,
+      "latencyMs": 982,
+      "tokens": 76,
+      "cost": 0.00076,
+      "qualityScore": 0.85,
+      "responseLength": 262
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 74,
+      "success": true,
+      "latencyMs": 1255,
+      "tokens": 79,
+      "cost": 0.00079,
+      "qualityScore": 0.85,
+      "responseLength": 264
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 75,
+      "success": true,
+      "latencyMs": 997,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 310
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 76,
+      "success": true,
+      "latencyMs": 830,
+      "tokens": 71,
+      "cost": 0.00071,
+      "qualityScore": 0.85,
+      "responseLength": 254
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 77,
+      "success": true,
+      "latencyMs": 903,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 362
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 78,
+      "success": true,
+      "latencyMs": 970,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 323
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 79,
+      "success": true,
+      "latencyMs": 993,
+      "tokens": 87,
+      "cost": 0.0008700000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 306
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 80,
+      "success": true,
+      "latencyMs": 1061,
+      "tokens": 72,
+      "cost": 0.00072,
+      "qualityScore": 0.85,
+      "responseLength": 264
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 81,
+      "success": true,
+      "latencyMs": 893,
+      "tokens": 75,
+      "cost": 0.00075,
+      "qualityScore": 0.85,
+      "responseLength": 253
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 82,
+      "success": true,
+      "latencyMs": 888,
+      "tokens": 88,
+      "cost": 0.00088,
+      "qualityScore": 0.85,
+      "responseLength": 310
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 83,
+      "success": true,
+      "latencyMs": 1043,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 331
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 84,
+      "success": true,
+      "latencyMs": 984,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 236
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 85,
+      "success": true,
+      "latencyMs": 1399,
+      "tokens": 84,
+      "cost": 0.00084,
+      "qualityScore": 0.85,
+      "responseLength": 316
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 86,
+      "success": true,
+      "latencyMs": 856,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 372
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 87,
+      "success": true,
+      "latencyMs": 922,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 306
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 88,
+      "success": true,
+      "latencyMs": 1146,
+      "tokens": 84,
+      "cost": 0.00084,
+      "qualityScore": 0.85,
+      "responseLength": 307
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 89,
+      "success": true,
+      "latencyMs": 811,
+      "tokens": 74,
+      "cost": 0.0007400000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 263
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 90,
+      "success": true,
+      "latencyMs": 825,
+      "tokens": 80,
+      "cost": 0.0008,
+      "qualityScore": 0.85,
+      "responseLength": 331
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 91,
+      "success": true,
+      "latencyMs": 2405,
+      "tokens": 70,
+      "cost": 0.0007000000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 253
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 92,
+      "success": true,
+      "latencyMs": 1170,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 304
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 93,
+      "success": true,
+      "latencyMs": 1187,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 327
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 94,
+      "success": true,
+      "latencyMs": 1131,
+      "tokens": 79,
+      "cost": 0.00079,
+      "qualityScore": 0.85,
+      "responseLength": 277
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 95,
+      "success": true,
+      "latencyMs": 1206,
+      "tokens": 89,
+      "cost": 0.0008900000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 375
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 96,
+      "success": true,
+      "latencyMs": 1092,
+      "tokens": 87,
+      "cost": 0.0008700000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 361
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 97,
+      "success": true,
+      "latencyMs": 1151,
+      "tokens": 76,
+      "cost": 0.00076,
+      "qualityScore": 0.85,
+      "responseLength": 297
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 98,
+      "success": true,
+      "latencyMs": 1174,
+      "tokens": 84,
+      "cost": 0.00084,
+      "qualityScore": 0.85,
+      "responseLength": 301
+    },
+    {
+      "interface": "vision_analysis",
+      "promptIndex": 99,
+      "success": true,
+      "latencyMs": 1171,
+      "tokens": 78,
+      "cost": 0.0007800000000000001,
+      "qualityScore": 0.85,
+      "responseLength": 260
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 0,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 1,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 22,
+      "cost": 0.00033,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 2,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 3,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 4,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 21,
+      "cost": 0.000315,
+      "qualityScore": 0.9,
+      "responseLength": 40
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 5,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 6,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 23,
+      "cost": 0.000345,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 7,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 8,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 9,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 29,
+      "cost": 0.000435,
+      "qualityScore": 0.9,
+      "responseLength": 52
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 10,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 11,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 23,
+      "cost": 0.000345,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 12,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 13,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 27,
+      "cost": 0.00040500000000000003,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 14,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 22,
+      "cost": 0.00033,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 15,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 16,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 17,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 18,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 19,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 29,
+      "cost": 0.000435,
+      "qualityScore": 0.9,
+      "responseLength": 52
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 20,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 21,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 23,
+      "cost": 0.000345,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 22,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 23,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 27,
+      "cost": 0.00040500000000000003,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 24,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 22,
+      "cost": 0.00033,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 25,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 26,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 27,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 28,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 29,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 29,
+      "cost": 0.000435,
+      "qualityScore": 0.9,
+      "responseLength": 52
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 30,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 31,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 23,
+      "cost": 0.000345,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 32,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 33,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 27,
+      "cost": 0.00040500000000000003,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 34,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 22,
+      "cost": 0.00033,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 35,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 36,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 37,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 38,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 39,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 29,
+      "cost": 0.000435,
+      "qualityScore": 0.9,
+      "responseLength": 52
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 40,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 41,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 23,
+      "cost": 0.000345,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 42,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 43,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 27,
+      "cost": 0.00040500000000000003,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 44,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 22,
+      "cost": 0.00033,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 45,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 46,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 47,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 48,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 49,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 29,
+      "cost": 0.000435,
+      "qualityScore": 0.9,
+      "responseLength": 52
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 50,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 51,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 23,
+      "cost": 0.000345,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 52,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 53,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 27,
+      "cost": 0.00040500000000000003,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 54,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 22,
+      "cost": 0.00033,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 55,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 56,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 57,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 58,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 59,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 29,
+      "cost": 0.000435,
+      "qualityScore": 0.9,
+      "responseLength": 52
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 60,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 61,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 23,
+      "cost": 0.000345,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 62,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 63,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 27,
+      "cost": 0.00040500000000000003,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 64,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 22,
+      "cost": 0.00033,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 65,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 66,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 67,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 68,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 69,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 29,
+      "cost": 0.000435,
+      "qualityScore": 0.9,
+      "responseLength": 52
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 70,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 71,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 23,
+      "cost": 0.000345,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 72,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 73,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 27,
+      "cost": 0.00040500000000000003,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 74,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 22,
+      "cost": 0.00033,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 75,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 76,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 77,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 78,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 79,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 29,
+      "cost": 0.000435,
+      "qualityScore": 0.9,
+      "responseLength": 52
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 80,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 81,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 23,
+      "cost": 0.000345,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 82,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 83,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 27,
+      "cost": 0.00040500000000000003,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 84,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 22,
+      "cost": 0.00033,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 85,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 86,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 87,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 88,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 89,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 29,
+      "cost": 0.000435,
+      "qualityScore": 0.9,
+      "responseLength": 52
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 90,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 91,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 23,
+      "cost": 0.000345,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 92,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 93,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 27,
+      "cost": 0.00040500000000000003,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 94,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 22,
+      "cost": 0.00033,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 95,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 25,
+      "cost": 0.000375,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 96,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 24,
+      "cost": 0.00036,
+      "qualityScore": 0.9,
+      "responseLength": 44
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 97,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 98,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 26,
+      "cost": 0.00039,
+      "qualityScore": 0.9,
+      "responseLength": 48
+    },
+    {
+      "interface": "speech_synthesis",
+      "promptIndex": 99,
+      "success": true,
+      "latencyMs": 1,
+      "tokens": 30,
+      "cost": 0.00045,
+      "qualityScore": 0.9,
+      "responseLength": 52
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 0,
+      "success": true,
+      "latencyMs": 130.4,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 1,
+      "success": true,
+      "latencyMs": 130.4,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 2,
+      "success": true,
+      "latencyMs": 130.4,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 3,
+      "success": true,
+      "latencyMs": 130.4,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 4,
+      "success": true,
+      "latencyMs": 130.4,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 5,
+      "success": true,
+      "latencyMs": 130.4,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 6,
+      "success": true,
+      "latencyMs": 130.4,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 7,
+      "success": true,
+      "latencyMs": 130.4,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 8,
+      "success": true,
+      "latencyMs": 130.4,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 9,
+      "success": true,
+      "latencyMs": 130.4,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 10,
+      "success": true,
+      "latencyMs": 22.7,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 11,
+      "success": true,
+      "latencyMs": 22.7,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 12,
+      "success": true,
+      "latencyMs": 22.7,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 13,
+      "success": true,
+      "latencyMs": 22.7,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 14,
+      "success": true,
+      "latencyMs": 22.7,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 15,
+      "success": true,
+      "latencyMs": 22.7,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 16,
+      "success": true,
+      "latencyMs": 22.7,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 17,
+      "success": true,
+      "latencyMs": 22.7,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 18,
+      "success": true,
+      "latencyMs": 22.7,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 19,
+      "success": true,
+      "latencyMs": 22.7,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 20,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 21,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 22,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 23,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 24,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 25,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 26,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 27,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 28,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 29,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 30,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 31,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 32,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 33,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 34,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 35,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 36,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 37,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 38,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 39,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 40,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 41,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 42,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 43,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 44,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 45,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 46,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 47,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 48,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 49,
+      "success": true,
+      "latencyMs": 22.1,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 50,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 51,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 52,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 53,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 54,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 55,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 56,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 57,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 58,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 59,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 60,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 61,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 62,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 63,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 64,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 65,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 66,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 67,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 68,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 69,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 70,
+      "success": true,
+      "latencyMs": 28.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 71,
+      "success": true,
+      "latencyMs": 28.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 72,
+      "success": true,
+      "latencyMs": 28.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 73,
+      "success": true,
+      "latencyMs": 28.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 74,
+      "success": true,
+      "latencyMs": 28.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 75,
+      "success": true,
+      "latencyMs": 28.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 76,
+      "success": true,
+      "latencyMs": 28.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 77,
+      "success": true,
+      "latencyMs": 28.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 78,
+      "success": true,
+      "latencyMs": 28.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 79,
+      "success": true,
+      "latencyMs": 28.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 80,
+      "success": true,
+      "latencyMs": 22.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 81,
+      "success": true,
+      "latencyMs": 22.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 82,
+      "success": true,
+      "latencyMs": 22.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 83,
+      "success": true,
+      "latencyMs": 22.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 84,
+      "success": true,
+      "latencyMs": 22.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 85,
+      "success": true,
+      "latencyMs": 22.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 86,
+      "success": true,
+      "latencyMs": 22.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 87,
+      "success": true,
+      "latencyMs": 22.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 88,
+      "success": true,
+      "latencyMs": 22.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 89,
+      "success": true,
+      "latencyMs": 22.3,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 90,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 91,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 92,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 93,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 94,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 95,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 96,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 97,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 98,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    },
+    {
+      "interface": "embedding",
+      "promptIndex": 99,
+      "success": true,
+      "latencyMs": 22.2,
+      "tokens": 5,
+      "cost": 0.0000049999999999999996,
+      "qualityScore": 0.95,
+      "responseLength": 384
+    }
+  ]
+}

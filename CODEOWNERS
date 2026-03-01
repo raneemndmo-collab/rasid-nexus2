@@ -1,0 +1,55 @@
+# ═══════════════════════════════════════════════════════════════
+# RASID PLATFORM — CODEOWNERS
+# ═══════════════════════════════════════════════════════════════
+# FULL KERNEL FREEZE effective from phase-2-exit
+# Any modification to K1-K10 requires formal [AMENDMENT-NNN]
+# ═══════════════════════════════════════════════════════════════
+
+# ─── Kernel Modules (FROZEN — K1-K10) ────────────────────────
+# These directories are under FULL KERNEL FREEZE.
+# Changes require [AMENDMENT-NNN] approval + @kernel-guardians review.
+
+/src/modules/k1-auth/           @kernel-guardians
+/src/modules/k2-tenant/         @kernel-guardians
+/src/modules/k3-audit/          @kernel-guardians
+/src/modules/k4-config/         @kernel-guardians
+/src/modules/k5-events/         @kernel-guardians
+/src/modules/k6-notification/   @kernel-guardians
+/src/modules/k7-scheduler/      @kernel-guardians
+/src/modules/k8-storage/        @kernel-guardians
+/src/modules/k9-monitoring/     @kernel-guardians
+/src/modules/k10-registry/      @kernel-guardians
+
+# ─── Kernel Database Schemas (FROZEN) ────────────────────────
+/infrastructure/database/        @kernel-guardians
+
+# ─── Shared Interfaces (FROZEN) ──────────────────────────────
+/src/shared/                     @kernel-guardians
+
+# ─── Business Modules ────────────────────────────────────────
+# Phase 0
+/src/modules/m1-*/               @business-team
+/src/modules/m2-*/               @business-team
+/src/modules/m3-*/               @business-team
+/src/modules/m4-*/               @business-team
+/src/modules/m30-*/              @business-team
+
+# Phase 1
+/src/modules/m5-*/               @business-team
+/src/modules/m6-*/               @business-team
+/src/modules/m7-*/               @business-team
+/src/modules/m8-*/               @business-team
+
+# Phase 2
+/src/modules/m9-*/               @business-team
+/src/modules/m10-*/              @business-team
+/src/modules/m11-*/              @business-team @ai-team
+/src/modules/m12-*/              @business-team
+/src/modules/m13-*/              @business-team
+/src/modules/m14-*/              @business-team
+
+# ─── Documentation ───────────────────────────────────────────
+/docs/                           @docs-team
+
+# ─── Tests ───────────────────────────────────────────────────
+/test/                           @qa-team
