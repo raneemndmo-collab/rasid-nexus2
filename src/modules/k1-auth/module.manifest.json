@@ -1,0 +1,26 @@
+{
+  "moduleId": "K1",
+  "name": "Auth Gateway",
+  "description": "JWT issuance, validation, rate limiting, JWKS endpoint",
+  "phase": 0,
+  "tier": "kernel",
+  "database": "k1_auth_db",
+  "dependencies": [],
+  "events": {
+    "publishes": [
+      "auth.token.issued",
+      "auth.token.validated",
+      "auth.token.revoked",
+      "auth.login.success",
+      "auth.login.failed",
+      "auth.rate_limit.exceeded"
+    ],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /auth/login",
+    "POST /auth/validate",
+    "POST /auth/token",
+    "GET /.well-known/jwks"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "moduleId": "M4",
+  "name": "Permissions",
+  "description": "Permission CRUD, permission checking, module-based grouping",
+  "phase": 0,
+  "tier": "business",
+  "database": "m4_permissions_db",
+  "dependencies": ["K1", "K2", "K3", "K5"],
+  "events": {
+    "publishes": ["permission.created", "permission.deleted"],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /permissions",
+    "GET /permissions",
+    "GET /permissions/:id",
+    "GET /permissions/check/:code",
+    "DELETE /permissions/:id"
+  ]
+}

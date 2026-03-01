@@ -1,0 +1,16 @@
+{
+  "moduleId": "K3",
+  "name": "Audit",
+  "description": "Audit middleware, append-only log, audit query API",
+  "phase": 0,
+  "tier": "kernel",
+  "database": "k3_audit_db",
+  "dependencies": ["K1", "K2"],
+  "events": {
+    "publishes": ["audit.entry.created"],
+    "subscribes": []
+  },
+  "endpoints": [
+    "GET /audit"
+  ]
+}

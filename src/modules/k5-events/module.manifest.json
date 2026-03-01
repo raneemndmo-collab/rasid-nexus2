@@ -1,0 +1,20 @@
+{
+  "moduleId": "K5",
+  "name": "Event Bus",
+  "description": "Event publishing, subscription, schema registry, DLQ, idempotency",
+  "phase": 0,
+  "tier": "kernel",
+  "database": "k5_events_db",
+  "dependencies": ["K1", "K2", "K3"],
+  "events": {
+    "publishes": ["events.*"],
+    "subscribes": ["*"]
+  },
+  "endpoints": [
+    "POST /events/publish",
+    "GET /events/:eventId",
+    "GET /events/correlation/:correlationId",
+    "GET /events/type/:eventType",
+    "GET /events/dlq/list"
+  ]
+}

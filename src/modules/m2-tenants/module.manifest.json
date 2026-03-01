@@ -1,0 +1,20 @@
+{
+  "moduleId": "M2",
+  "name": "Tenants",
+  "description": "Tenant CRUD, lifecycle management, settings",
+  "phase": 0,
+  "tier": "business",
+  "database": "m2_tenants_db",
+  "dependencies": ["K1", "K2", "K3", "K5"],
+  "events": {
+    "publishes": ["tenant.created", "tenant.updated", "tenant.deleted"],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /tenants",
+    "GET /tenants",
+    "GET /tenants/:id",
+    "PUT /tenants/:id",
+    "DELETE /tenants/:id"
+  ]
+}

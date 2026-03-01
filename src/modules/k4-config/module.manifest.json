@@ -1,0 +1,19 @@
+{
+  "moduleId": "K4",
+  "name": "Configuration",
+  "description": "Config store, CRUD API, Redis cache, config change events",
+  "phase": 0,
+  "tier": "kernel",
+  "database": "k4_config_db",
+  "dependencies": ["K1", "K2", "K3"],
+  "events": {
+    "publishes": ["config.changed", "config.deleted"],
+    "subscribes": []
+  },
+  "endpoints": [
+    "GET /config/:key",
+    "GET /config",
+    "PUT /config/:key",
+    "DELETE /config/:key"
+  ]
+}

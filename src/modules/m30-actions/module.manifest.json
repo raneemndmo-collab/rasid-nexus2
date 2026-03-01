@@ -1,0 +1,21 @@
+{
+  "moduleId": "M30",
+  "name": "Action Registry",
+  "description": "Central registry for all platform actions, validation, ACT_UNREGISTERED guard",
+  "phase": 0,
+  "tier": "business",
+  "database": "m30_actions_db",
+  "dependencies": ["K5"],
+  "events": {
+    "publishes": ["action.registered", "action.deactivated"],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /actions",
+    "GET /actions",
+    "GET /actions/module/:module",
+    "GET /actions/:code",
+    "POST /actions/:code/validate",
+    "DELETE /actions/:id"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "moduleId": "M3",
+  "name": "Roles",
+  "description": "Role CRUD, permission assignment to roles",
+  "phase": 0,
+  "tier": "business",
+  "database": "m3_roles_db",
+  "dependencies": ["K1", "K2", "K3", "K5"],
+  "events": {
+    "publishes": ["role.created", "role.updated", "role.deleted"],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /roles",
+    "GET /roles",
+    "GET /roles/:id",
+    "PUT /roles/:id",
+    "DELETE /roles/:id"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "moduleId": "K2",
+  "name": "Tenant Isolation",
+  "description": "TenantContext middleware, RLS policy generator, cross-tenant guard",
+  "phase": 0,
+  "tier": "kernel",
+  "database": "k2_tenant_db",
+  "dependencies": ["K1"],
+  "events": {
+    "publishes": ["tenant.context.set", "tenant.rls.enabled", "tenant.access.denied"],
+    "subscribes": []
+  },
+  "endpoints": []
+}

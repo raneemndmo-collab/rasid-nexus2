@@ -1,0 +1,21 @@
+{
+  "moduleId": "M1",
+  "name": "Auth Users",
+  "description": "User CRUD, password hashing (bcrypt), role assignment, credential validation",
+  "phase": 0,
+  "tier": "business",
+  "database": "m1_auth_users_db",
+  "dependencies": ["K1", "K2", "K3", "K5"],
+  "events": {
+    "publishes": ["auth.user.created", "auth.user.updated", "auth.user.deleted", "auth.user.role_assigned"],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /users",
+    "GET /users",
+    "GET /users/:id",
+    "PUT /users/:id",
+    "DELETE /users/:id",
+    "POST /users/:id/roles"
+  ]
+}
