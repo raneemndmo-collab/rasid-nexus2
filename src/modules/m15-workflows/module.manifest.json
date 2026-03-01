@@ -1,0 +1,37 @@
+{
+  "moduleId": "M15",
+  "version": "0.1.0",
+  "name": "Workflows",
+  "description": "Workflows module",
+  "phase": 3,
+  "tier": "business",
+  "database": "m15_workflows_db",
+  "dependencies": [
+    "K5",
+    "K7"
+  ],
+  "events": {
+    "publishes": [
+      "m15.workflow.definition.created",
+      "m15.workflow.definition.updated",
+      "m15.workflow.execution.started",
+      "m15.workflow.execution.completed",
+      "m15.workflow.execution.failed",
+      "m15.workflow.step.started",
+      "m15.workflow.step.completed"
+    ],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /api/v1/workflows/definitions",
+    "GET /api/v1/workflows/definitions",
+    "GET /api/v1/workflows/definitions/:id",
+    "PUT /api/v1/workflows/definitions/:id",
+    "PUT /api/v1/workflows/definitions/:id/activate",
+    "DELETE /api/v1/workflows/definitions/:id",
+    "POST /api/v1/workflows/executions",
+    "GET /api/v1/workflows/executions",
+    "GET /api/v1/workflows/executions/:id",
+    "GET /api/v1/workflows/executions/:id/logs"
+  ]
+}

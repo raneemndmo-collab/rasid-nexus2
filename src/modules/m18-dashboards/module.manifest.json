@@ -1,0 +1,31 @@
+{
+  "moduleId": "M18",
+  "version": "0.1.0",
+  "name": "Dashboards",
+  "description": "Dashboards module",
+  "phase": 3,
+  "tier": "business",
+  "database": "m18_dashboards_db",
+  "dependencies": [
+    "K5",
+    "M11"
+  ],
+  "events": {
+    "publishes": [
+      "m18.dashboard.created",
+      "m18.dashboard.widget.added",
+      "m18.dashboard.ai_insight.generated"
+    ],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /api/v1/dashboards",
+    "GET /api/v1/dashboards",
+    "GET /api/v1/dashboards/:id",
+    "PUT /api/v1/dashboards/:id",
+    "POST /api/v1/dashboards/:id/widgets",
+    "GET /api/v1/dashboards/:id/widgets",
+    "POST /api/v1/dashboards/:id/ai-insight"
+  ],
+  "ai_integration": "M11 for AI insights \u2014 no direct DB access to other modules"
+}

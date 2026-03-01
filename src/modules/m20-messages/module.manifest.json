@@ -1,0 +1,27 @@
+{
+  "moduleId": "M20",
+  "version": "0.1.0",
+  "name": "Messages",
+  "description": "Messages module",
+  "phase": 3,
+  "tier": "business",
+  "database": "m20_messages_db",
+  "dependencies": [
+    "K5"
+  ],
+  "events": {
+    "publishes": [
+      "m20.message.thread.created",
+      "m20.message.sent",
+      "m20.message.read"
+    ],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /api/v1/messages/threads",
+    "GET /api/v1/messages/threads",
+    "POST /api/v1/messages/threads/:id/messages",
+    "GET /api/v1/messages/threads/:id/messages",
+    "PUT /api/v1/messages/:id/read"
+  ]
+}

@@ -63,10 +63,16 @@ describe('T-P2-FIX4-SA007: Kernel Freeze Verification', () => {
 
   for (const kernel of newKernels) {
     it(`should have ${kernel} as NEW Phase 2 deliverable`, () => {
-      const kernelFiles = changedFiles.filter(f => f.startsWith(`src/modules/${kernel}/`));
-      expect(kernelFiles.length).toBeGreaterThan(0); // Should have new files
+      // K8-K10 were delivered in Phase 2 and merged to main.
+      // Verify they exist with proper Clean Architecture structure.
       const dir = path.join(REPO_ROOT, 'src', 'modules', kernel);
       expect(fs.existsSync(dir)).toBe(true);
+      // Verify Clean Architecture layers
+      expect(fs.existsSync(path.join(dir, 'domain'))).toBe(true);
+      expect(fs.existsSync(path.join(dir, 'infrastructure'))).toBe(true);
+      expect(fs.existsSync(path.join(dir, 'application'))).toBe(true);
+      expect(fs.existsSync(path.join(dir, 'presentation'))).toBe(true);
+      expect(fs.existsSync(path.join(dir, 'module.manifest.json'))).toBe(true);
     });
   }
 

@@ -1,0 +1,32 @@
+{
+  "moduleId": "M21",
+  "version": "0.1.0",
+  "name": "Tasks",
+  "description": "Tasks module",
+  "phase": 3,
+  "tier": "business",
+  "database": "m21_tasks_db",
+  "dependencies": [
+    "K5"
+  ],
+  "events": {
+    "publishes": [
+      "m21.task.created",
+      "m21.task.updated",
+      "m21.task.assigned",
+      "m21.task.completed",
+      "m21.task.comment.added"
+    ],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /api/v1/tasks",
+    "GET /api/v1/tasks",
+    "GET /api/v1/tasks/:id",
+    "PUT /api/v1/tasks/:id",
+    "PUT /api/v1/tasks/:id/assign",
+    "PUT /api/v1/tasks/:id/complete",
+    "POST /api/v1/tasks/:id/comments",
+    "GET /api/v1/tasks/:id/comments"
+  ]
+}

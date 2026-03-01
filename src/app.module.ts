@@ -40,6 +40,17 @@ import { M12NotificationsModule } from './modules/m12-notifications/m12-notifica
 import { M13FilesModule } from './modules/m13-files/m13-files.module';
 import { M14ReportsModule } from './modules/m14-reports/m14-reports.module';
 
+// Business Modules — Phase 3
+import { M15WorkflowsModule } from './modules/m15-workflows/m15-workflows.module';
+import { M16FormsModule } from './modules/m16-forms/m16-forms.module';
+import { M17OcrModule } from './modules/m17-ocr/m17-ocr.module';
+import { M18DashboardsModule } from './modules/m18-dashboards/m18-dashboards.module';
+import { M19CalendarModule } from './modules/m19-calendar/m19-calendar.module';
+import { M20MessagesModule } from './modules/m20-messages/m20-messages.module';
+import { M21TasksModule } from './modules/m21-tasks/m21-tasks.module';
+import { M22ProjectsModule } from './modules/m22-projects/m22-projects.module';
+import { M23CollaborationModule } from './modules/m23-collaboration/m23-collaboration.module';
+
 // ORM Entities — Phase 0
 import { AuthTokenOrmEntity } from './modules/k1-auth/infrastructure/persistence/repositories/auth-token.orm-entity';
 import { AuditLogOrmEntity } from './modules/k3-audit/infrastructure/persistence/repositories/audit-log.orm-entity';
@@ -69,6 +80,17 @@ import { UserNotificationOrmEntity, NotificationSubscriptionOrmEntity } from './
 import { ManagedFileOrmEntity, FolderOrmEntity, FileShareOrmEntity } from './modules/m13-files/infrastructure/persistence/repositories/file.orm-entity';
 import { PayrollRunOrmEntity, PayrollItemOrmEntity, EmployeePayslipOrmEntity, SalaryStructureOrmEntity } from './modules/m9-payroll/infrastructure/persistence/repositories/payroll.orm-entity';
 import { ReportDefinitionOrmEntity, ReportExecutionOrmEntity, ScheduledReportOrmEntity } from './modules/m14-reports/infrastructure/persistence/repositories/report.orm-entity';
+
+// ORM Entities — Phase 3
+import { WorkflowDefinitionEntity, WorkflowExecutionEntity, WorkflowStepLogEntity } from './modules/m15-workflows/infrastructure/persistence/repositories/workflow.orm-entity';
+import { FormDefinitionEntity, FormSubmissionEntity } from './modules/m16-forms/infrastructure/persistence/repositories/form.orm-entity';
+import { OcrJobEntity } from './modules/m17-ocr/infrastructure/persistence/repositories/ocr.orm-entity';
+import { DashboardEntity, WidgetEntity } from './modules/m18-dashboards/infrastructure/persistence/repositories/dashboard.orm-entity';
+import { CalendarEventEntity } from './modules/m19-calendar/infrastructure/persistence/repositories/calendar.orm-entity';
+import { MessageThreadEntity, MessageEntity } from './modules/m20-messages/infrastructure/persistence/repositories/message.orm-entity';
+import { TaskEntity, TaskCommentEntity } from './modules/m21-tasks/infrastructure/persistence/repositories/task.orm-entity';
+import { ProjectEntity, ProjectMemberEntity } from './modules/m22-projects/infrastructure/persistence/repositories/project.orm-entity';
+import { CollaborationSessionEntity, CollaborationChangeEntity, CollaborationPresenceEntity } from './modules/m23-collaboration/infrastructure/persistence/repositories/collaboration.orm-entity';
 
 // Health
 import { HealthController } from './health.controller';
@@ -142,6 +164,25 @@ import { HealthController } from './health.controller';
           ReportDefinitionOrmEntity,
           ReportExecutionOrmEntity,
           ScheduledReportOrmEntity,
+          // Phase 3
+          WorkflowDefinitionEntity,
+          WorkflowExecutionEntity,
+          WorkflowStepLogEntity,
+          FormDefinitionEntity,
+          FormSubmissionEntity,
+          OcrJobEntity,
+          DashboardEntity,
+          WidgetEntity,
+          CalendarEventEntity,
+          MessageThreadEntity,
+          MessageEntity,
+          TaskEntity,
+          TaskCommentEntity,
+          ProjectEntity,
+          ProjectMemberEntity,
+          CollaborationSessionEntity,
+          CollaborationChangeEntity,
+          CollaborationPresenceEntity,
         ],
         synchronize: config.get<string>('NODE_ENV') === 'development',
         logging: config.get<string>('NODE_ENV') === 'development',
@@ -182,6 +223,17 @@ import { HealthController } from './health.controller';
     M12NotificationsModule,
     M13FilesModule,
     M14ReportsModule,
+
+    // Business modules — Phase 3
+    M15WorkflowsModule,
+    M16FormsModule,
+    M17OcrModule,
+    M18DashboardsModule,
+    M19CalendarModule,
+    M20MessagesModule,
+    M21TasksModule,
+    M22ProjectsModule,
+    M23CollaborationModule,
   ],
   controllers: [HealthController],
 })

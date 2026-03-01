@@ -1,0 +1,27 @@
+{
+  "moduleId": "M19",
+  "version": "0.1.0",
+  "name": "Calendar",
+  "description": "Calendar module",
+  "phase": 3,
+  "tier": "business",
+  "database": "m19_calendar_db",
+  "dependencies": [
+    "K5"
+  ],
+  "events": {
+    "publishes": [
+      "m19.calendar.event.created",
+      "m19.calendar.event.updated",
+      "m19.calendar.event.cancelled"
+    ],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /api/v1/calendar/events",
+    "GET /api/v1/calendar/events",
+    "GET /api/v1/calendar/events/:id",
+    "PUT /api/v1/calendar/events/:id",
+    "DELETE /api/v1/calendar/events/:id"
+  ]
+}

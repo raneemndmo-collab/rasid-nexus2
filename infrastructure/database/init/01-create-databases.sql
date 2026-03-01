@@ -1,6 +1,6 @@
 -- ═══════════════════════════════════════════════════════════
--- Rasid Platform — Phase 0+1+2: Database Initialization
--- 25 PostgreSQL databases with isolated users and RLS
+-- Rasid Platform — Phase 0+1+2+3: Database Initialization
+-- 34 PostgreSQL databases with isolated users and RLS
 -- ═══════════════════════════════════════════════════════════
 
 -- ─── Admin Role ───
@@ -37,6 +37,17 @@ CREATE USER m12_user WITH PASSWORD 'm12_pass';
 CREATE USER m13_user WITH PASSWORD 'm13_pass';
 CREATE USER m14_user WITH PASSWORD 'm14_pass';
 
+-- ─── Phase 3 Users ───
+CREATE USER m15_user WITH PASSWORD 'm15_pass';
+CREATE USER m16_user WITH PASSWORD 'm16_pass';
+CREATE USER m17_user WITH PASSWORD 'm17_pass';
+CREATE USER m18_user WITH PASSWORD 'm18_pass';
+CREATE USER m19_user WITH PASSWORD 'm19_pass';
+CREATE USER m20_user WITH PASSWORD 'm20_pass';
+CREATE USER m21_user WITH PASSWORD 'm21_pass';
+CREATE USER m22_user WITH PASSWORD 'm22_pass';
+CREATE USER m23_user WITH PASSWORD 'm23_pass';
+
 -- ─── Phase 0 Databases ───
 CREATE DATABASE k1_auth_db OWNER k1_user;
 CREATE DATABASE k2_tenant_db OWNER k2_user;
@@ -67,6 +78,17 @@ CREATE DATABASE m11_ai_db OWNER m11_user;
 CREATE DATABASE m12_notifications_db OWNER m12_user;
 CREATE DATABASE m13_files_db OWNER m13_user;
 CREATE DATABASE m14_reports_db OWNER m14_user;
+
+-- ─── Phase 3 Databases ───
+CREATE DATABASE m15_workflows_db OWNER m15_user;
+CREATE DATABASE m16_forms_db OWNER m16_user;
+CREATE DATABASE m17_ocr_db OWNER m17_user;
+CREATE DATABASE m18_dashboards_db OWNER m18_user;
+CREATE DATABASE m19_calendar_db OWNER m19_user;
+CREATE DATABASE m20_messages_db OWNER m20_user;
+CREATE DATABASE m21_tasks_db OWNER m21_user;
+CREATE DATABASE m22_projects_db OWNER m22_user;
+CREATE DATABASE m23_collaboration_db OWNER m23_user;
 
 -- ─── Revoke cross-database access (Phase 0) ───
 REVOKE ALL ON DATABASE k1_auth_db FROM PUBLIC;
@@ -99,6 +121,17 @@ REVOKE ALL ON DATABASE m12_notifications_db FROM PUBLIC;
 REVOKE ALL ON DATABASE m13_files_db FROM PUBLIC;
 REVOKE ALL ON DATABASE m14_reports_db FROM PUBLIC;
 
+-- ─── Revoke cross-database access (Phase 3) ───
+REVOKE ALL ON DATABASE m15_workflows_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m16_forms_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m17_ocr_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m18_dashboards_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m19_calendar_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m20_messages_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m21_tasks_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m22_projects_db FROM PUBLIC;
+REVOKE ALL ON DATABASE m23_collaboration_db FROM PUBLIC;
+
 -- ─── Grant connect (Phase 0) ───
 GRANT CONNECT ON DATABASE k1_auth_db TO k1_user;
 GRANT CONNECT ON DATABASE k2_tenant_db TO k2_user;
@@ -129,3 +162,14 @@ GRANT CONNECT ON DATABASE m11_ai_db TO m11_user;
 GRANT CONNECT ON DATABASE m12_notifications_db TO m12_user;
 GRANT CONNECT ON DATABASE m13_files_db TO m13_user;
 GRANT CONNECT ON DATABASE m14_reports_db TO m14_user;
+
+-- ─── Grant connect (Phase 3) ───
+GRANT CONNECT ON DATABASE m15_workflows_db TO m15_user;
+GRANT CONNECT ON DATABASE m16_forms_db TO m16_user;
+GRANT CONNECT ON DATABASE m17_ocr_db TO m17_user;
+GRANT CONNECT ON DATABASE m18_dashboards_db TO m18_user;
+GRANT CONNECT ON DATABASE m19_calendar_db TO m19_user;
+GRANT CONNECT ON DATABASE m20_messages_db TO m20_user;
+GRANT CONNECT ON DATABASE m21_tasks_db TO m21_user;
+GRANT CONNECT ON DATABASE m22_projects_db TO m22_user;
+GRANT CONNECT ON DATABASE m23_collaboration_db TO m23_user;

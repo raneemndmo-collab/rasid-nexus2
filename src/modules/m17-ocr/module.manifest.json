@@ -1,0 +1,29 @@
+{
+  "moduleId": "M17",
+  "version": "0.1.0",
+  "name": "OCR",
+  "description": "OCR module",
+  "phase": 3,
+  "tier": "business",
+  "database": "m17_ocr_db",
+  "dependencies": [
+    "K5",
+    "M11"
+  ],
+  "events": {
+    "publishes": [
+      "m17.ocr.job.created",
+      "m17.ocr.job.completed",
+      "m17.ocr.job.failed",
+      "m17.ocr.table.extracted"
+    ],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /api/v1/ocr/jobs",
+    "POST /api/v1/ocr/jobs/:id/process",
+    "GET /api/v1/ocr/jobs",
+    "GET /api/v1/ocr/jobs/:id"
+  ],
+  "ai_integration": "M11 IVisionAnalysis ONLY \u2014 no direct AI hosting (SA-003)"
+}

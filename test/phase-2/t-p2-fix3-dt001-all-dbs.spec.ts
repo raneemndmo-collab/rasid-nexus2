@@ -112,7 +112,8 @@ describe('T-P2-FIX3-DT001-C: Database Existence Verification', () => {
       for (const { db } of ALL_DATABASES) {
         expect(dbNames).toContain(db);
       }
-      expect(dbNames.length).toBe(25);
+      // Phase 0 (10) + Phase 1 (6) + Phase 2 (9) = 25 minimum; Phase 3 adds 9 more = 34
+      expect(dbNames.length).toBeGreaterThanOrEqual(25);
     } finally {
       await pool.end();
     }

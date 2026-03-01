@@ -1,0 +1,32 @@
+{
+  "moduleId": "M23",
+  "version": "0.1.0",
+  "name": "Collaboration",
+  "description": "Collaboration module",
+  "phase": 3,
+  "tier": "business",
+  "database": "m23_collaboration_db",
+  "dependencies": [
+    "K5"
+  ],
+  "events": {
+    "publishes": [
+      "m23.collaboration.session.created",
+      "m23.collaboration.session.ended",
+      "m23.collaboration.change.applied",
+      "m23.collaboration.user.joined",
+      "m23.collaboration.conflict.detected"
+    ],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /api/v1/collaboration/sessions",
+    "GET /api/v1/collaboration/sessions",
+    "PUT /api/v1/collaboration/sessions/:id/end",
+    "POST /api/v1/collaboration/sessions/:id/changes",
+    "GET /api/v1/collaboration/sessions/:id/changes",
+    "POST /api/v1/collaboration/sessions/:id/join",
+    "POST /api/v1/collaboration/sessions/:id/leave",
+    "GET /api/v1/collaboration/sessions/:id/presence"
+  ]
+}

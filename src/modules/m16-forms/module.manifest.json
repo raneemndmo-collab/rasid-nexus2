@@ -1,0 +1,28 @@
+{
+  "moduleId": "M16",
+  "version": "0.1.0",
+  "name": "Form Builder",
+  "description": "Form Builder module",
+  "phase": 3,
+  "tier": "business",
+  "database": "m16_forms_db",
+  "dependencies": [
+    "K5"
+  ],
+  "events": {
+    "publishes": [
+      "m16.form.definition.created",
+      "m16.form.definition.published",
+      "m16.form.submission.created"
+    ],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /api/v1/forms/definitions",
+    "GET /api/v1/forms/definitions",
+    "GET /api/v1/forms/definitions/:id",
+    "PUT /api/v1/forms/definitions/:id/publish",
+    "POST /api/v1/forms/definitions/:id/submit",
+    "GET /api/v1/forms/definitions/:id/submissions"
+  ]
+}

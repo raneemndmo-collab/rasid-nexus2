@@ -1,0 +1,32 @@
+{
+  "moduleId": "M22",
+  "version": "0.1.0",
+  "name": "Projects",
+  "description": "Projects module",
+  "phase": 3,
+  "tier": "business",
+  "database": "m22_projects_db",
+  "dependencies": [
+    "K5",
+    "M21"
+  ],
+  "events": {
+    "publishes": [
+      "m22.project.created",
+      "m22.project.updated",
+      "m22.project.completed",
+      "m22.project.member.added"
+    ],
+    "subscribes": []
+  },
+  "endpoints": [
+    "POST /api/v1/projects",
+    "GET /api/v1/projects",
+    "GET /api/v1/projects/:id",
+    "PUT /api/v1/projects/:id",
+    "PUT /api/v1/projects/:id/complete",
+    "POST /api/v1/projects/:id/members",
+    "GET /api/v1/projects/:id/members",
+    "DELETE /api/v1/projects/:id/members/:userId"
+  ]
+}
